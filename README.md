@@ -1,2 +1,2 @@
-# wardbulletin
-Make the ward bulletin a web page maybe?
+# Western Hills Ward Bulletin
+Make the ward bulletin a web page maybe? It'll be useful... and cool...
