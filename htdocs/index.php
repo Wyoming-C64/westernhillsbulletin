@@ -1,7 +1,5 @@
 <?php 
 
-$filename=
-
 $dir = "./*.pdf";
 
 // Sort in ascending order - this is default
@@ -12,9 +10,18 @@ $b = rsort($a);
 
 $filename = $b[0];
 
-header('Content-type: application/pdf');
-header('Content-Disposition: attachment; filename="' . basename($filename) . '"');
-header('Content-Transfer-Encoding: binary');
-readfile($filename);
+if (file_exists($filename)) {
+  header('Content-Description: File Transfer');
+  header('Content-Type: application/octet-stream');
+  header('Content-Disposition: attachment; filename="'.basename($filename).'"');
+  header('Expires: 0');
+  header('Cache-Control: must-revalidate');
+  header('Pragma: public');
+  header('Content-Length: ' . filesize($filename));
+  readfile($filename);
+  exit;
+} else {
+  echo "Cannot find " . $filename . ".";
+}
 
 ?>
