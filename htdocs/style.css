@@ -225,6 +225,17 @@ a.button-link:visited {
   color: white;
 }
 
+.super-ordinal {
+  padding-bottom: 0;
+  font-variant: small-caps;
+  position: relative;
+  top: -0.5em;
+  font-size: 0.6em;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
 
 @page {
   size: 5.5in 8.5in;

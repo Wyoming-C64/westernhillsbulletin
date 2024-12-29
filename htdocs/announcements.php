@@ -8,39 +8,56 @@ function mike_dump($v) {
 
 $announcements = array(
   array(
-    "title" => "Stake Christmas Fireside",
-    "date" => strtotime("December 15, 2024"),
-    "time" => strtotime("December 15, 2024 18:00:00"),
-    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => "<p>Come join us for a night of music and the spoken word as
-    we celebrate the Christmas season and the birth of our Savior, Jesus Christ.
-    Invite your firends and family. We have invited the Cheyenne East Stake to join
-    us as well. Please come if you are able to do so. The Stake is also providing a
-    Zoom link (see below) in the event you are unable to attend in person. Light
-    refreshments will be provided.</p>
-    <h3><b>Food Drive</b></h3>
-    <p>Additionally, the Stake will also be collecting donations of <b>non-perishable</b>
-    food items to be given to our local food banks. If you would like to contribute,
-    please bring your donated items to the fireside.</p>
-    <h3><b>Zoom Details</b></h3>". 
-    '<a href="https://zoom.us/">https://zoom.us/j/madeupazoomlinkfortestingbutitdoesntreallywork</a>'. 
-    "<p>Meeting ID: 123 4567 8910<br/>
-    Passcode: 395562</p>"
+    "title" => 'Today: Fifth Sunday - Second Hour Combined Meetings',
+    // "date" => strtotime("December 29, 2024"),
+    // "time" => strtotime("December 29, 2024 10:05:00"),
+    // "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
+    "description" => '<ul>
+    <li>Adults will meet together in the Relief Society room.</li> 
+    <li>All youth will meet together in the Young Women room.</li>
+    </ul>'
   ),
   array(
-    "title" => "Building Cleaning",
-    "date" => strtotime("December 21, 2024"),
-    "time" => strtotime("December 21, 2024 8:00:00"),
-    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => "<p>This is our month to clean the building. Please volunteer this coming Saturday at <span class='small-caps'>8:00 am</span> to help care for our meetinghouse. <i>Many hands make light work...</i></p>"
+    "title" => "2025 Sunday Schedule",
+    "date" => strtotime("January 5, 2025"),
+    "time" => strtotime("January 5, 2025 10:30:00"),
+    // "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
+    "description" => "<p>Happy New Year! Our meeting schedule will change to the <span class='small-caps'>10:30 am</span> block for 2025 with the following schedule:</p>
+    <div class='additional'>
+      <div class='left-item'>Sacrament Meeting</div>
+      <div class='right-item'>10:30 am to 11:25 am</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Second Hour</div>
+      <div class='right-item'>11:35 am to 12:30 pm</div>
+    </div>
+    <h3>Primary Schedule</h3>
+    <p>Additionally, starting in 2025, <i>all primary classes</i> (both junior and senior primary) will now meet <i>together</i> for singing time. Primary classes will be directed by the following second hour schedule:</p>
+    <div class='additional'>
+      <div class='left-item'>Classroom Instruction</div>
+      <div class='right-item'>11:35 am to 12:00 pm</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Transition to Singing Time</div>
+      <div class='right-item'>12:00 pm to 12:05 pm</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Scripture, Talk</div>
+      <div class='right-item'>12:05 am to 12:10 pm</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Singing Time, Closing Prayer</div>
+      <div class='right-item'>12:10 pm to 12:30 pm</div>
+    </div>"
   ),
   array(
-    "title" => "Next Sunday Meeting Schedule",
-    "date" => strtotime("December 22, 2024"),
-    "time" => strtotime("December 22, 2024 10:30:00"),
-    "description" => "<p>Next Sunday we will be joining the Capitol Hill Ward and meet for <i>Sacrament Meeting only</i> at <b class='small-caps'>10:30 am</b>.</p>
-    <p><b>There will be no second hour meetings.</b></p>"
+    "title" => "Ward Conference",
+    "date" => strtotime("January 26, 2025"),
+    "time" => strtotime("January 26, 2025 10:30:00"),
+    "description" => "<p>We will be holding Ward Conference on January 26, 2025.</p>"
   ),
+
+/******** THIS ANNOUNCEMENT ALWAYS LAST *********/
   array(
     "title" => "Have an Announcement for the Bulletin?",
     "description" => "<p>Send your announcement for upcoming activities and events to Mike Lewis.
@@ -62,7 +79,7 @@ $announcements = array(
 
 );
 
-$meetingDate = strtotime("December 15, 2024");
+$meetingDate = strtotime("December 29, 2024");
 
 function printAnnouncement($item) {
   $output = '<div class="announcement">';

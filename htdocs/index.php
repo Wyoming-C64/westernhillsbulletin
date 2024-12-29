@@ -6,38 +6,16 @@ function mike_dump($v) {
   echo "</pre>";
 }
 
-// $dir = "./*.pdf";
-
-// // Sort in ascending order - this is default
-// $a = glob($dir);
-
-// // Sort in descending order
-// rsort($a);
-
-// $filename = $a[0];
-
-// if (file_exists($filename)) {
-//   header('Content-Description: File Transfer');
-//   header('Content-Type: application/octet-stream');
-//   header('Content-Disposition: attachment; filename="'.basename($filename).'"');
-//   header('Expires: 0');
-//   header('Cache-Control: must-revalidate');
-//   header('Pragma: public');
-//   header('Content-Length: ' . filesize($filename));
-//   readfile($filename);
-//   exit;
-// } else {
-//   echo "Cannot find " . $filename . ".";
-// }
-
 $leaders = array(
   array(
     'assignment' => 'Presiding',
-    'name' => 'Bishop Jason Whiting',
+    'name' => 'Bro. Michael Howard',
+    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   ),
   array(
     'assignment' => 'Conducting',
-    'name' => 'Bro. Ken Burke',
+    'name' => 'Bro. Michael Howard',
+    // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   ),
   array(
     'assignment' => 'Chorister',
@@ -52,32 +30,45 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'name' => 'Oh, Come, All Ye Faithful',
-    'reference' => '<i>Hymns</i> - No. 202',
+    'name' => 'Come, Rejoice',
+    'reference' => '<i>Hymns</i> - No. 9',
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'name' => 'Upon the Cross of Calvary',
-    'reference' => '<i>Hymns</i> - No. 184',
+    'name' => 'I Stand All Amazed',
+    'reference' => '<i>Hymns</i> - No. 193',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'name' => 'Angels We Have Heard on High',
-    'reference' => '<i>Hymns</i> - No. 203',
+    'name' => 'How Firm a Foundation',
+    'reference' => '<i>Hymns</i> - No. 85',
   ),
+);
+
+$intermissionMusic = array(
+  array(
+    'assignment' => 'Intermediate Hymn',
+    'name' => 'Jesus, Lover of My Soul',
+    'reference' => '<i>Hymns</i> - No. 102',
+  ),
+  // array(
+  //   'assignment' => 'Musical Number',
+  //   'name' => '',
+  //   'subline' => ''
+  // )
 );
 
 $firstSpeakers = array(
   array(
-    'assignment' => 'Speaker',
-    'name' => 'Sis. Crookston',
-    'subline' => 'Colorado Fort Collins Mission'
+    'assignment' => 'Youth Speaker',
+    'name' => 'Sis. Adrienne Howard',
+    // 'subline' => 'Colorado Fort Collins Mission'
   ),
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => '',
-  //   'subline' => ''
-  // ),
+  array(
+    'assignment' => 'Speaker',
+    'name' => 'Sis. Melanie Lewis',
+    // 'subline' => ''
+  ),
   // array(
   //   'assignment' => 'Speaker',
   //   'name' => '',
@@ -94,8 +85,8 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Doug Fowler',
-    //'subline' => ''
+    'name' => 'Bro. Ken Burke',
+    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -115,35 +106,23 @@ $secondSpeakers = array(
   
 );
 
-$intermissionMusic = array(
-  // array(
-  //   'assignment' => 'Intermediate Hymn',
-  //   'name' => 'The Spirit of God',
-  //   'reference' => '<i>Hymns</i> - No. 2',
-  // ),
-  array(
-    'assignment' => 'Musical Number',
-    'name' => 'Christmas Medley',
-    'subline' => 'Bro. John Walker, Piano'
-  )
-);
-
 
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Sis. Smith',
-    'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'By Invitation',
+    // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. Logan Howard'
+    'name' => 'By Invitation',
+    // 'subline' => 'Colorado Fort Collins Mission'
   )
 );
 
 
 $meetingType = "Sacrament";
-$meetingDate = "December 15, 2024";
+$meetingDate = "December 29, 2024";
 
 function makeHymnLink($title) {
   $output = strtolower($title);
