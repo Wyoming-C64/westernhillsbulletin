@@ -176,7 +176,7 @@ main .additional {
 }
 
 .description .left-item {
-  margin-left: 2em;
+  margin-left: 1.25em;
 }
 
 
@@ -238,6 +238,6 @@ a.button-link:visited {
 }
 
 @page {
-  size: 5.5in 8.5in;
+  size: 8.5in 11in;
 
 }

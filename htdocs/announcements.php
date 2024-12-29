@@ -25,17 +25,21 @@ $announcements = array(
     "description" => "<p>Happy New Year! Our meeting schedule will change to the <span class='small-caps'>10:30 am</span> block for 2025 with the following schedule:</p>
     <div class='additional'>
       <div class='left-item'>Sacrament Meeting</div>
-      <div class='right-item'>10:30 am to 11:25 am</div>
+      <div class='right-item'>10:30 am to 11:30 am</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Transition to Classes</div>
+      <div class='right-item'>11:30 am to 11:40 am</div>
     </div>
     <div class='additional'>
       <div class='left-item'>Second Hour</div>
-      <div class='right-item'>11:35 am to 12:30 pm</div>
+      <div class='right-item'>11:40 am to 12:30 pm</div>
     </div>
     <h3>Primary Schedule</h3>
     <p>Additionally, starting in 2025, <i>all primary classes</i> (both junior and senior primary) will now meet <i>together</i> for singing time. Primary classes will be directed by the following second hour schedule:</p>
     <div class='additional'>
       <div class='left-item'>Classroom Instruction</div>
-      <div class='right-item'>11:35 am to 12:00 pm</div>
+      <div class='right-item'>11:40 am to 12:00 pm</div>
     </div>
     <div class='additional'>
       <div class='left-item'>Transition to Singing Time</div>
