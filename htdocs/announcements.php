@@ -8,21 +8,11 @@ function mike_dump($v) {
 
 $announcements = array(
   array(
-    "title" => 'Today: Fifth Sunday - Second Hour Combined Meetings',
-    // "date" => strtotime("December 29, 2024"),
-    // "time" => strtotime("December 29, 2024 10:05:00"),
-    // "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => '<ul>
-    <li>Adults will meet together in the Relief Society room.</li> 
-    <li>All youth will meet together in the Young Women room.</li>
-    </ul>'
-  ),
-  array(
     "title" => "2025 Sunday Schedule",
     "date" => strtotime("January 5, 2025"),
     "time" => strtotime("January 5, 2025 10:30:00"),
     // "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => "<p>Happy New Year! Our meeting schedule will change to the <span class='small-caps'>10:30 am</span> block for 2025 with the following schedule:</p>
+    "description" => "<p>Happy New Year! Here is our <span class='small-caps'>10:30 am</span> meeting schedule for the rest of 2025:</p>
     <div class='additional'>
       <div class='left-item'>Sacrament Meeting</div>
       <div class='right-item'>10:30 am to 11:30 am</div>
@@ -36,7 +26,7 @@ $announcements = array(
       <div class='right-item'>11:40 am to 12:30 pm</div>
     </div>
     <h3>Primary Schedule</h3>
-    <p>Additionally, starting in 2025, <i>all primary classes</i> (both junior and senior primary) will now meet <i>together</i> for singing time. Primary classes will be directed by the following second hour schedule:</p>
+    <p>Additionally, <i>all primary classes</i> (both junior and senior primary) will now meet <i>together</i> for singing time. Primary classes will be directed by the following second hour schedule:</p>
     <div class='additional'>
       <div class='left-item'>Classroom Instruction</div>
       <div class='right-item'>11:40 am to 12:00 pm</div>
@@ -60,8 +50,31 @@ $announcements = array(
     "time" => strtotime("January 26, 2025 10:30:00"),
     "description" => "<p>We will be holding Ward Conference on January 26, 2025.</p>"
   ),
+  array(
+    "title" => "2025 Ward Temple Schedule",
+    "date" => strtotime("January 18, 2025"),
+    "time" => strtotime("January 18, 2025 10:00:00"),
+    "description" => "<p>Here is our temple schedule for the next three months. Please make your own reservations on LDS Tools.</p>
+    <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
+    <div class='additional'>
+      <div class='left-item'>Jan. 18, 10:00 am</div>
+      <div class='right-item'>Initiatories</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Feb. 21, 7:00 pm</div>
+      <div class='right-item'>Endowments</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Mar. 20, 7:00 pm</div>
+      <div class='right-item'>Sealings</div>
+    </div>"
+  ),
 
-/******** THIS ANNOUNCEMENT ALWAYS LAST *********/
+/******** THESE ANNOUNCEMENTS ALWAYS LAST *********/
+  // array(
+  //   "title" => "Bishopric Appointments",
+  //   "description" => "<p>If you need an appointment to meet with the Bishop or one of the counselors, please schedule this with Bro. Joey Bainbridge</p>"
+  // ),
   array(
     "title" => "Have an Announcement for the Bulletin?",
     "description" => "<p>Send your announcement for upcoming activities and events to Mike Lewis.
@@ -83,7 +96,7 @@ $announcements = array(
 
 );
 
-$meetingDate = strtotime("December 29, 2024");
+require('globals.php');
 
 function printAnnouncement($item) {
   $output = '<div class="announcement">';

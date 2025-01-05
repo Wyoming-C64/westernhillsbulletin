@@ -9,48 +9,61 @@ function mike_dump($v) {
 $leaders = array(
   array(
     'assignment' => 'Presiding',
-    'name' => 'Bro. Michael Howard',
-    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
   array(
     'assignment' => 'Conducting',
     'name' => 'Bro. Michael Howard',
-    // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bro. Ken Burke',
+  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  // ),
   array(
     'assignment' => 'Chorister',
     'name' => 'Sis. Adrienne Howard',
   ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Sis. Pam Hall',
+  // ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Bro. Jason Bird',
+  // ),
   array(
     'assignment' => 'Accompanist',
-    'name' => 'Sis. Pam Hall',
+    'name' => 'Bro. Joey Bainbridge',
   ),
 );
 
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'name' => 'Come, Rejoice',
-    'reference' => '<i>Hymns</i> - No. 9',
+    'name' => 'Ring Out Wild Bells',
+    'reference' => '<i>Hymns</i> - No. 215',
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'name' => 'I Stand All Amazed',
-    'reference' => '<i>Hymns</i> - No. 193',
+    'name' => 'While of These Emblems We Partake',
+    'reference' => '<i>Hymns</i> - No. 174',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'name' => 'How Firm a Foundation',
-    'reference' => '<i>Hymns</i> - No. 85',
+    'name' => 'Testimony',
+    'reference' => '<i>Hymns</i> - No. 137',
   ),
 );
 
 $intermissionMusic = array(
-  array(
-    'assignment' => 'Intermediate Hymn',
-    'name' => 'Jesus, Lover of My Soul',
-    'reference' => '<i>Hymns</i> - No. 102',
-  ),
+  // array(
+  //   'assignment' => 'Intermediate Hymn',
+  //   'name' => 'Jesus, Lover of My Soul',
+  //   'reference' => '<i>Hymns</i> - No. ',
+  // ),
   // array(
   //   'assignment' => 'Musical Number',
   //   'name' => '',
@@ -59,16 +72,16 @@ $intermissionMusic = array(
 );
 
 $firstSpeakers = array(
-  array(
-    'assignment' => 'Youth Speaker',
-    'name' => 'Sis. Adrienne Howard',
-    // 'subline' => 'Colorado Fort Collins Mission'
-  ),
-  array(
-    'assignment' => 'Speaker',
-    'name' => 'Sis. Melanie Lewis',
-    // 'subline' => ''
-  ),
+  // array(
+  //   'assignment' => 'Youth Speaker',
+  //   'name' => 'Sis. Adrienne Howard',
+  //   // 'subline' => 'Colorado Fort Collins Mission'
+  // ),
+  // array(
+  //   'assignment' => 'Speaker',
+  //   'name' => 'Sis. Melanie Lewis',
+  //   // 'subline' => ''
+  // ),
   // array(
   //   'assignment' => 'Speaker',
   //   'name' => '',
@@ -83,11 +96,11 @@ $firstSpeakers = array(
 );
 
 $secondSpeakers = array(
-  array(
-    'assignment' => 'Speaker',
-    'name' => 'Bro. Ken Burke',
-    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
-  ),
+  // array(
+  //   'assignment' => 'Speaker',
+  //   'name' => 'Bro. Ken Burke',
+  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  // ),
   // array(
   //   'assignment' => 'Speaker',
   //   'name' => '',
@@ -110,19 +123,19 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'By Invitation',
-    // 'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'by Invitation',
+    // 'subline' => ''
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'By Invitation',
-    // 'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Bro. Colton Butterfield',
+    // 'subline' => ''
   )
 );
 
+require('globals.php');
+$meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
 
-$meetingType = "Sacrament";
-$meetingDate = "December 29, 2024";
 
 function makeHymnLink($title) {
   $output = strtolower($title);
@@ -178,7 +191,7 @@ function printHymn($hymn) {
       <div class="ward-title">
         <span class="ward-name">Western Hills Ward</span><br/>The Church of Jesus Christ of Latter-day Saints</div>
       <h1><?php echo $meetingType; ?> Meeting</h1>
-      <div class="meeting-date"><?php echo $meetingDate; ?></div>
+      <div class="meeting-date"><?php echo date('F j, Y', $meetingDate); ?></div>
       <div class="meeting-leaders">
         <?php
           foreach ($leaders as $leader) {
@@ -198,7 +211,13 @@ function printHymn($hymn) {
           printItem($speaker); 
         }
       ?>
-      <?php printHymn($intermissionMusic[0]); ?>
+      <?php 
+        if ($Fast_And_Testimony) {
+          echo '<div class="centered-item">Sharing of Testimonies</div>';
+        } else {
+          printHymn($intermissionMusic[0]); 
+        }
+      ?>
       <?php 
         foreach ($secondSpeakers as $speaker) {      
           printItem($speaker); 
