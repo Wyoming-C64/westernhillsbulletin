@@ -45,12 +45,6 @@ $announcements = array(
     </div>"
   ),
   array(
-    "title" => "Ward Conference",
-    "date" => strtotime("January 26, 2025"),
-    "time" => strtotime("January 26, 2025 10:30:00"),
-    "description" => "<p>We will be holding Ward Conference on January 26, 2025.</p>"
-  ),
-  array(
     "title" => "2025 Ward Temple Schedule",
     "date" => strtotime("January 18, 2025"),
     "time" => strtotime("January 18, 2025 10:00:00"),
@@ -68,6 +62,12 @@ $announcements = array(
       <div class='left-item'>Mar. 20, 7:00 pm</div>
       <div class='right-item'>Sealings</div>
     </div>"
+  ),
+  array(
+    "title" => "Ward Conference",
+    "date" => strtotime("January 26, 2025"),
+    "time" => strtotime("January 26, 2025 10:30:00"),
+    "description" => "<p>We will be holding Ward Conference on January 26, 2025.</p>"
   ),
 
 /******** THESE ANNOUNCEMENTS ALWAYS LAST *********/
