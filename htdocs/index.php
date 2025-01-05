@@ -49,6 +49,7 @@ $hymns = array(
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
     'name' => 'While of These Emblems We Partake',
+    'tune' => 'Aeolian',
     'reference' => '<i>Hymns</i> - No. 174',
   ),
   'closing' => array(
@@ -137,9 +138,10 @@ require('globals.php');
 $meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
 
 
-function makeHymnLink($title) {
+function makeHymnLink($title, $tune = '') {
   $output = strtolower($title);
   $output = preg_replace('/[\s\pP]+/u', '-', $output);
+  $output .= (strlen($tune) > 0 ? '-'.strtolower($tune) : '');
   $output = "https://www.churchofjesuschrist.org/study/manual/hymns/".$output."?lang=eng";
   return $output;
 }
@@ -154,13 +156,11 @@ function printItem($individual) {
   if (isset($individual["subline"])) {
     $output .= '<div class="subline">'.$individual["subline"].'</div>';
   }
-  if (isset($individual['reference'])) {
-    $output .= '<div class="subline"><a href="'.makeHymnLink($individual['name']).'" target="_blank">'.$individual['reference'].'</a></div>';
-  }
   echo $output;
 }
 
 function printHymn($hymn) {
+  $hymn['tune'] = isset($hymn['tune']) ? $hymn['tune'] : FALSE;
   $output = '<div class="line-item">';
   $output .= '<div class="left-item">'.$hymn["assignment"].'</div>';
   $output .= '<div class="right-item"><i>'.$hymn["name"];
@@ -170,7 +170,7 @@ function printHymn($hymn) {
     $output .= '<div class="subline">'.$hymn["subline"].'</div>';
   }
   if (isset($hymn['reference'])) {
-    $output .= '<div class="subline"><a href="'.makeHymnLink($hymn['name']).'" target="_blank">'.$hymn['reference'].'</a></div>';
+    $output .= '<div class="subline"><a href="'.makeHymnLink($hymn['name'],$hymn['tune']).'" target="_blank">'.$hymn['reference'].'</a></div>';
   }
   echo $output;
 }
