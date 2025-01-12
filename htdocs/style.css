@@ -39,6 +39,12 @@ h3 {
   font-variant: small-caps;  
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+  border: 0px;
+}
+
 a {
   font-size: 1.1em;
   color: green;

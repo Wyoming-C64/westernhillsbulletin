@@ -45,6 +45,13 @@ $announcements = array(
     </div>"
   ),
   array(
+    "title" => "Stake Primary - Scavenger Hunt (TODAY)",
+    "date" => strtotime("January 12, 2025"),
+    "time" => strtotime("January 12, 2025 15:00:00"),
+    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
+    "description" => "<p><img src='jan2025stakeprimary.png'></p>"
+  ),
+  array(
     "title" => "2025 Ward Temple Schedule",
     "date" => strtotime("January 18, 2025"),
     "time" => strtotime("January 18, 2025 10:00:00"),
@@ -97,6 +104,7 @@ $announcements = array(
 );
 
 require('globals.php');
+$css_timestamp = filemtime('style.css');
 
 function printAnnouncement($item) {
   $output = '<div class="announcement">';
@@ -128,7 +136,7 @@ function printAnnouncement($item) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Western Hills Ward Announcements</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?ver=<?php echo $css_timestamp; ?>">
 </head>
 <body>
   <div class="program">

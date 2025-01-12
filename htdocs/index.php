@@ -12,11 +12,26 @@ $leaders = array(
     'name' => 'Bishop Jason Whiting',
     'subline' => ''
   ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bro. Ken Burke',
+  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  // ),
   array(
     'assignment' => 'Conducting',
-    'name' => 'Bro. Michael Howard',
-    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
   // array(
   //   'assignment' => 'Conducting',
   //   'name' => 'Bro. Ken Burke',
@@ -26,45 +41,41 @@ $leaders = array(
     'assignment' => 'Chorister',
     'name' => 'Sis. Adrienne Howard',
   ),
-  // array(
-  //   'assignment' => 'Accompanist',
-  //   'name' => 'Sis. Pam Hall',
-  // ),
+  array(
+    'assignment' => 'Accompanist',
+    'name' => 'Sis. Pam Hall',
+  ),
   // array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Jason Bird',
   // ),
-  array(
-    'assignment' => 'Accompanist',
-    'name' => 'Bro. Joey Bainbridge',
-  ),
 );
 
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'name' => 'Ring Out Wild Bells',
-    'reference' => '<i>Hymns</i> - No. 215',
+    'name' => "We Listen to a Prophet's Voice",
+    'reference' => '<i>Hymns</i> - No. 22',
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'name' => 'While of These Emblems We Partake',
-    'tune' => 'Aeolian',
-    'reference' => '<i>Hymns</i> - No. 174',
+    'name' => "Again We Meet Around the Board",
+    // 'tune' => 'Aeolian',
+    'reference' => '<i>Hymns</i> - No. 186',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'name' => 'Testimony',
-    'reference' => '<i>Hymns</i> - No. 137',
+    'name' => "Joseph Smith's First Prayer",
+    'reference' => '<i>Hymns</i> - No. 26',
   ),
 );
 
 $intermissionMusic = array(
-  // array(
-  //   'assignment' => 'Intermediate Hymn',
-  //   'name' => 'Jesus, Lover of My Soul',
-  //   'reference' => '<i>Hymns</i> - No. ',
-  // ),
+  array(
+    'assignment' => 'Intermediate Hymn',
+    'name' => "Now We'll Sing With One Accord",
+    'reference' => '<i>Hymns</i> - No. 25',
+  ),
   // array(
   //   'assignment' => 'Musical Number',
   //   'name' => '',
@@ -73,16 +84,16 @@ $intermissionMusic = array(
 );
 
 $firstSpeakers = array(
-  // array(
-  //   'assignment' => 'Youth Speaker',
-  //   'name' => 'Sis. Adrienne Howard',
-  //   // 'subline' => 'Colorado Fort Collins Mission'
-  // ),
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => 'Sis. Melanie Lewis',
-  //   // 'subline' => ''
-  // ),
+  array(
+    'assignment' => 'Youth Speaker',
+    'name' => 'Bro. Johnny Walker',
+    // 'subline' => 'Colorado Fort Collins Mission'
+  ),
+  array(
+    'assignment' => 'Speaker',
+    'name' => 'Bro. Hunter Chapman',
+    'subline' => ''
+  ),
   // array(
   //   'assignment' => 'Speaker',
   //   'name' => '',
@@ -97,11 +108,11 @@ $firstSpeakers = array(
 );
 
 $secondSpeakers = array(
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => 'Bro. Ken Burke',
-  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
-  // ),
+  array(
+    'assignment' => 'Speaker',
+    'name' => 'Bro. Jeff Rees',
+    'subline' => ''
+  ),
   // array(
   //   'assignment' => 'Speaker',
   //   'name' => '',
@@ -124,22 +135,24 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'by Invitation',
+    'name' => 'Bro. Mike Lewis',
     // 'subline' => ''
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. Colton Butterfield',
+    'name' => '',
     // 'subline' => ''
   )
 );
 
 require('globals.php');
 $meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
+$css_timestamp = filemtime('style.css');
 
 
 function makeHymnLink($title, $tune = '') {
   $output = strtolower($title);
+  $output = preg_replace('/[\']+/u', '', $output);
   $output = preg_replace('/[\s\pP]+/u', '-', $output);
   $output .= (strlen($tune) > 0 ? '-'.strtolower($tune) : '');
   $output = "https://www.churchofjesuschrist.org/study/manual/hymns/".$output."?lang=eng";
@@ -183,7 +196,7 @@ function printHymn($hymn) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Western Hills Ward Sacrament Meeting</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?ver=<?php echo $css_timestamp; ?>">
 </head>
 <body>
   <div class="program">
