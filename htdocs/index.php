@@ -91,7 +91,7 @@ $firstSpeakers = array(
   ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Hunter Chapman',
+    'name' => 'Bro. Brant Christensen',
     'subline' => ''
   ),
   // array(
