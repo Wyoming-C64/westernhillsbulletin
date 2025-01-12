@@ -140,7 +140,7 @@ $prayers = array(
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => '',
+    'name' => 'Sis. Susanna Bird',
     // 'subline' => ''
   )
 );
