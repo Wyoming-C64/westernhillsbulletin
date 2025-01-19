@@ -7,60 +7,25 @@ function mike_dump($v) {
 }
 
 $announcements = array(
+  
   array(
-    "title" => "2025 Sunday Schedule",
-    "date" => strtotime("January 5, 2025"),
-    "time" => strtotime("January 5, 2025 10:30:00"),
-    // "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => "<p>Happy New Year! Here is our <span class='small-caps'>10:30 am</span> meeting schedule for the rest of 2025:</p>
-    <div class='additional'>
-      <div class='left-item'>Sacrament Meeting</div>
-      <div class='right-item'>10:30 am to 11:30 am</div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Transition to Classes</div>
-      <div class='right-item'>11:30 am to 11:40 am</div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Second Hour</div>
-      <div class='right-item'>11:40 am to 12:30 pm</div>
-    </div>
-    <h3>Primary Schedule</h3>
-    <p>Additionally, <i>all primary classes</i> (both junior and senior primary) will now meet <i>together</i> for singing time. Primary classes will be directed by the following second hour schedule:</p>
-    <div class='additional'>
-      <div class='left-item'>Classroom Instruction</div>
-      <div class='right-item'>11:40 am to 12:00 pm</div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Transition to Singing Time</div>
-      <div class='right-item'>12:00 pm to 12:05 pm</div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Scripture, Talk</div>
-      <div class='right-item'>12:05 am to 12:10 pm</div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Singing Time, Closing Prayer</div>
-      <div class='right-item'>12:10 pm to 12:30 pm</div>
-    </div>"
+    "title" => "Young Men / Young Women Calendar",
+    // "date" => strtotime("January 26, 2025"),
+    // "time" => strtotime("January 26, 2025 10:30:00"),
+    "description" => "<p>Bro. and Sis. Rees have put together a calendar for all upcoming youth events and meetings. You can access this shared document at: <br/><a class='long_url' href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/</a></p>"
   ),
   array(
-    "title" => "Stake Primary - Scavenger Hunt (TODAY)",
-    "date" => strtotime("January 12, 2025"),
-    "time" => strtotime("January 12, 2025 15:00:00"),
-    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => "<p><img src='jan2025stakeprimary.png'></p>"
+    "title" => "Ward Conference",
+    "date" => strtotime("January 26, 2025"),
+    "time" => strtotime("January 26, 2025 10:30:00"),
+    "description" => "<p>We will be holding Ward Conference next week on January 26, 2025.</p>"
   ),
   array(
     "title" => "2025 Ward Temple Schedule",
-    "date" => strtotime("January 18, 2025"),
-    "time" => strtotime("January 18, 2025 10:00:00"),
-    "description" => "<p>Here is our temple schedule for the next three months. Please make your own reservations on LDS Tools.</p>
+    "date" => strtotime("February 21, 2025"),
+    "time" => strtotime("February 21, 2025 19:00:00"),
+    "description" => "<p>Here are the upcoming ward temple events. Please make your own reservations on LDS Tools.</p>
     <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
-    <div class='additional'>
-      <div class='left-item'>Jan. 18, 10:00 am</div>
-      <div class='right-item'>Initiatories</div>
-    </div>
     <div class='additional'>
       <div class='left-item'>Feb. 21, 7:00 pm</div>
       <div class='right-item'>Endowments</div>
@@ -70,12 +35,7 @@ $announcements = array(
       <div class='right-item'>Sealings</div>
     </div>"
   ),
-  array(
-    "title" => "Ward Conference",
-    "date" => strtotime("January 26, 2025"),
-    "time" => strtotime("January 26, 2025 10:30:00"),
-    "description" => "<p>We will be holding Ward Conference on January 26, 2025.</p>"
-  ),
+  
 
 /******** THESE ANNOUNCEMENTS ALWAYS LAST *********/
   // array(
@@ -84,8 +44,8 @@ $announcements = array(
   // ),
   array(
     "title" => "Have an Announcement for the Bulletin?",
-    "description" => "<p>Send your announcement for upcoming activities and events to Mike Lewis.
-    You can communicate the details of your announcement using the following methods (in order of 
+    "description" => "<p>Send your announcements for upcoming activities and events to Mike Lewis by
+    using one of the following methods (in order of 
     preference):</p>
     <div class='line-item'>
       <div class='left-item'>Email</div>

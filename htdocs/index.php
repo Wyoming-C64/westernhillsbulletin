@@ -22,16 +22,16 @@ $leaders = array(
   //   'name' => 'Bro. Ken Burke',
   //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   // ),
-  array(
-    'assignment' => 'Conducting',
-    'name' => 'Bishop Jason Whiting',
-    'subline' => ''
-  ),
   // array(
   //   'assignment' => 'Conducting',
-  //   'name' => 'Bro. Michael Howard',
-  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
   // ),
+  array(
+    'assignment' => 'Conducting',
+    'name' => 'Bro. Michael Howard',
+    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  ),
   // array(
   //   'assignment' => 'Conducting',
   //   'name' => 'Bro. Ken Burke',
@@ -54,27 +54,27 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'name' => "We Listen to a Prophet's Voice",
-    'reference' => '<i>Hymns</i> - No. 22',
+    'name' => "Prayer is the Soul's Sincere Desire",
+    'reference' => '<i>Hymns</i> - No. 145',
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'name' => "Again We Meet Around the Board",
+    'name' => "With Humble Heart",
     // 'tune' => 'Aeolian',
-    'reference' => '<i>Hymns</i> - No. 186',
+    'reference' => '<i>Hymns</i> - No. 171',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'name' => "Joseph Smith's First Prayer",
-    'reference' => '<i>Hymns</i> - No. 26',
+    'name' => "Abide with Me; 'Tis Eventide",
+    'reference' => '<i>Hymns</i> - No. 165',
   ),
 );
 
 $intermissionMusic = array(
   array(
     'assignment' => 'Intermediate Hymn',
-    'name' => "Now We'll Sing With One Accord",
-    'reference' => '<i>Hymns</i> - No. 25',
+    'name' => "Sweet Hour of Prayer",
+    'reference' => '<i>Hymns</i> - No. 142',
   ),
   // array(
   //   'assignment' => 'Musical Number',
@@ -86,12 +86,12 @@ $intermissionMusic = array(
 $firstSpeakers = array(
   array(
     'assignment' => 'Youth Speaker',
-    'name' => 'Bro. Johnny Walker',
+    'name' => 'Bro. Levi Bainbridge',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Brant Christensen',
+    'name' => 'Bro. Hunter Chapman',
     'subline' => ''
   ),
   // array(
@@ -110,7 +110,7 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Jeff Rees',
+    'name' => 'Bro. Damon Hall',
     'subline' => ''
   ),
   // array(
@@ -135,12 +135,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Bro. Mike Lewis',
-    // 'subline' => ''
+    'name' => 'Sister Engstrom',
+    'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Susanna Bird',
+    'name' => 'Bro. Fischer Williams',
     // 'subline' => ''
   )
 );
