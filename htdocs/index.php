@@ -9,9 +9,14 @@ function mike_dump($v) {
 $leaders = array(
   array(
     'assignment' => 'Presiding',
-    'name' => 'Bishop Jason Whiting',
-    'subline' => ''
+    'name' => 'Pres. Ronald Lopez',
+    'subline' => 'Cheyenne Wyoming Stake'
   ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
+  // ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Michael Howard',
@@ -22,16 +27,16 @@ $leaders = array(
   //   'name' => 'Bro. Ken Burke',
   //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   // ),
-  // array(
-  //   'assignment' => 'Conducting',
-  //   'name' => 'Bishop Jason Whiting',
-  //   'subline' => ''
-  // ),
   array(
     'assignment' => 'Conducting',
-    'name' => 'Bro. Michael Howard',
-    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
   // array(
   //   'assignment' => 'Conducting',
   //   'name' => 'Bro. Ken Burke',
@@ -54,27 +59,28 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'name' => "Prayer is the Soul's Sincere Desire",
-    'reference' => '<i>Hymns</i> - No. 145',
+    'name' => "Dear to the Heart of the Shepherd",
+    'reference' => '<i>Hymns</i> - No. 221',
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'name' => "With Humble Heart",
-    // 'tune' => 'Aeolian',
-    'reference' => '<i>Hymns</i> - No. 171',
+    'name' => "'Tis Sweet to Sing the Matchless Love",
+    'tune' => 'Hancock',
+    'reference' => '<i>Hymns</i> - No. 177',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'name' => "Abide with Me; 'Tis Eventide",
-    'reference' => '<i>Hymns</i> - No. 165',
+    'name' => "I'll Go Where You Want Me to Go",
+    'reference' => '<i>Hymns</i> - No. 270',
   ),
 );
 
 $intermissionMusic = array(
   array(
     'assignment' => 'Intermediate Hymn',
-    'name' => "Sweet Hour of Prayer",
-    'reference' => '<i>Hymns</i> - No. 142',
+    'name' => "Brightly Beams Our Father's Mercy",
+    'tune' => "mens-choir",
+    'reference' => '<i>Hymns</i> - No. 335',
   ),
   // array(
   //   'assignment' => 'Musical Number',
@@ -84,15 +90,15 @@ $intermissionMusic = array(
 );
 
 $firstSpeakers = array(
-  array(
-    'assignment' => 'Youth Speaker',
-    'name' => 'Bro. Levi Bainbridge',
-    // 'subline' => 'Colorado Fort Collins Mission'
-  ),
+  // array(
+  //   'assignment' => 'Youth Speaker',
+  //   'name' => 'Bro. Levi Bainbridge',
+  //   // 'subline' => 'Colorado Fort Collins Mission'
+  // ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Hunter Chapman',
-    'subline' => ''
+    'name' => 'Bishop Jason Whiting',
+    // 'subline' => ''
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -110,8 +116,8 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Damon Hall',
-    'subline' => ''
+    'name' => 'Pres. Ronald Lopez',
+    // 'subline' => ''
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -135,12 +141,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Sister Engstrom',
-    'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Bro. Dean Dexter',
+    // 'subline' => ''
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. Fischer Williams',
+    'name' => 'Sis. Ashley Martinez',
     // 'subline' => ''
   )
 );

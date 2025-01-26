@@ -7,18 +7,22 @@ function mike_dump($v) {
 }
 
 $announcements = array(
-  
+  array(
+    "title" => "Ward Conference (Today)",
+    // "date" => strtotime("January 26, 2025"),
+    // "time" => strtotime("January 26, 2025 10:30:00"),
+    "description" => "<p>Our second-hour classes for today will be conducted as follows:</p>
+    <ul>
+    <li>All adults will be combined in the Relief Society room.</li>
+    <li>All youth will be comined in the Young Women's room.</li>
+    <li>All primary children will meet in the primary room.</li> 
+    </ul>"
+  ),
   array(
     "title" => "Young Men / Young Women Calendar",
     // "date" => strtotime("January 26, 2025"),
     // "time" => strtotime("January 26, 2025 10:30:00"),
     "description" => "<p>Bro. and Sis. Rees have put together a calendar for all upcoming youth events and meetings. You can access this shared document at: <br/><a class='long_url' href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/</a></p>"
-  ),
-  array(
-    "title" => "Ward Conference",
-    "date" => strtotime("January 26, 2025"),
-    "time" => strtotime("January 26, 2025 10:30:00"),
-    "description" => "<p>We will be holding Ward Conference next week on January 26, 2025.</p>"
   ),
   array(
     "title" => "2025 Ward Temple Schedule",
