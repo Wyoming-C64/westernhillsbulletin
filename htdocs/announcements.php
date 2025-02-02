@@ -8,17 +8,6 @@ function mike_dump($v) {
 
 $announcements = array(
   array(
-    "title" => "Ward Conference (Today)",
-    // "date" => strtotime("January 26, 2025"),
-    // "time" => strtotime("January 26, 2025 10:30:00"),
-    "description" => "<p>Our second-hour classes for today will be conducted as follows:</p>
-    <ul>
-    <li>All adults will be combined in the Relief Society room.</li>
-    <li>All youth will be comined in the Young Women's room.</li>
-    <li>All primary children will meet in the primary room.</li> 
-    </ul>"
-  ),
-  array(
     "title" => "Young Men / Young Women Calendar",
     // "date" => strtotime("January 26, 2025"),
     // "time" => strtotime("January 26, 2025 10:30:00"),

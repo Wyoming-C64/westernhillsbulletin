@@ -7,81 +7,81 @@ function mike_dump($v) {
 }
 
 $leaders = array(
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Pres. Ronald Lopez',
+  //   'subline' => 'Cheyenne Wyoming Stake'
+  // ),
   array(
     'assignment' => 'Presiding',
-    'name' => 'Pres. Ronald Lopez',
-    'subline' => 'Cheyenne Wyoming Stake'
-  ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bishop Jason Whiting',
-  //   'subline' => ''
-  // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bro. Michael Howard',
-  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
-  // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bro. Ken Burke',
-  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
-  // ),
-  array(
-    'assignment' => 'Conducting',
     'name' => 'Bishop Jason Whiting',
     'subline' => ''
   ),
   // array(
-  //   'assignment' => 'Conducting',
+  //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Michael Howard',
   //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   // ),
   // array(
-  //   'assignment' => 'Conducting',
+  //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Ken Burke',
   //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   // ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
+  // ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
+  array(
+    'assignment' => 'Conducting',
+    'name' => 'Bro. Ken Burke',
+    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  ),
   array(
     'assignment' => 'Chorister',
     'name' => 'Sis. Adrienne Howard',
   ),
-  array(
-    'assignment' => 'Accompanist',
-    'name' => 'Sis. Pam Hall',
-  ),
   // array(
   //   'assignment' => 'Accompanist',
-  //   'name' => 'Bro. Jason Bird',
+  //   'name' => 'Sis. Pam Hall',
   // ),
+  array(
+    'assignment' => 'Accompanist',
+    'name' => 'Bro. Jason Bird',
+  ),
 );
 
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'name' => "Dear to the Heart of the Shepherd",
-    'reference' => '<i>Hymns</i> - No. 221',
+    'name' => "The Day Dawn is Breaking",
+    'reference' => '<i>Hymns</i> - No. 52',
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'name' => "'Tis Sweet to Sing the Matchless Love",
-    'tune' => 'Hancock',
-    'reference' => '<i>Hymns</i> - No. 177',
+    'name' => "God Loved Us, So He Sent His Son",
+    // 'tune' => 'Hancock',
+    'reference' => '<i>Hymns</i> - No. 187',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'name' => "I'll Go Where You Want Me to Go",
-    'reference' => '<i>Hymns</i> - No. 270',
+    'name' => "How Great Thou Art",
+    'reference' => '<i>Hymns</i> - No. 86',
   ),
 );
 
 $intermissionMusic = array(
-  array(
-    'assignment' => 'Intermediate Hymn',
-    'name' => "Brightly Beams Our Father's Mercy",
-    'tune' => "mens-choir",
-    'reference' => '<i>Hymns</i> - No. 335',
-  ),
+  // array(
+  //   'assignment' => 'Intermediate Hymn',
+  //   'name' => "Brightly Beams Our Father's Mercy",
+  //   'tune' => "mens-choir",
+  //   'reference' => '<i>Hymns</i> - No. 335',
+  // ),
   // array(
   //   'assignment' => 'Musical Number',
   //   'name' => '',
@@ -141,12 +141,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Bro. Dean Dexter',
-    // 'subline' => ''
+    'name' => 'Sister Alley',
+    'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Ashley Martinez',
+    'name' => 'By Invitation',
     // 'subline' => ''
   )
 );
@@ -226,8 +226,10 @@ function printHymn($hymn) {
       <?php printHymn($hymns['sacrament']); ?>
       <div class="centered-item">Administration of the Sacrament</div>
       <?php 
-        foreach ($firstSpeakers as $speaker) {      
-          printItem($speaker); 
+        if (!$Fast_And_Testimony) {
+          foreach ($firstSpeakers as $speaker) {      
+            printItem($speaker); 
+          }
         }
       ?>
       <?php 
@@ -237,9 +239,11 @@ function printHymn($hymn) {
           printHymn($intermissionMusic[0]); 
         }
       ?>
-      <?php 
-        foreach ($secondSpeakers as $speaker) {      
-          printItem($speaker); 
+      <?php
+        if (!$Fast_And_Testimony) { 
+          foreach ($secondSpeakers as $speaker) {      
+            printItem($speaker); 
+          }
         }
       ?>
       <?php printHymn($hymns['closing']); ?>
