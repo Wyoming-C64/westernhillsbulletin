@@ -46,42 +46,42 @@ $leaders = array(
     'assignment' => 'Chorister',
     'name' => 'Sis. Adrienne Howard',
   ),
-  // array(
-  //   'assignment' => 'Accompanist',
-  //   'name' => 'Sis. Pam Hall',
-  // ),
   array(
     'assignment' => 'Accompanist',
-    'name' => 'Bro. Jason Bird',
+    'name' => 'Sis. Pam Hall',
   ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Bro. Jason Bird',
+  // ),
 );
 
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'name' => "The Day Dawn is Breaking",
-    'reference' => '<i>Hymns</i> - No. 52',
+    'reference' => 113,
+    'name' => "Our Savior's Love",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'name' => "God Loved Us, So He Sent His Son",
+    'reference' => 175,
+    'name' => "O God, the Eternal Father",
     // 'tune' => 'Hancock',
-    'reference' => '<i>Hymns</i> - No. 187',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'name' => "How Great Thou Art",
-    'reference' => '<i>Hymns</i> - No. 86',
+    'reference' => 1013,
+    'name' => "God's Gracious Love",
   ),
 );
 
 $intermissionMusic = array(
-  // array(
-  //   'assignment' => 'Intermediate Hymn',
-  //   'name' => "Brightly Beams Our Father's Mercy",
-  //   'tune' => "mens-choir",
-  //   'reference' => '<i>Hymns</i> - No. 335',
-  // ),
+  array(
+    'assignment' => 'Intermediate Hymn',
+    'name' => "Where Can I Turn for Peace?",
+    'reference' => 129,
+    // 'tune' => "",
+  ),
   // array(
   //   'assignment' => 'Musical Number',
   //   'name' => '',
@@ -97,7 +97,7 @@ $firstSpeakers = array(
   // ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bishop Jason Whiting',
+    'name' => 'Sis. Ann Christensen',
     // 'subline' => ''
   ),
   // array(
@@ -116,7 +116,7 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Pres. Ronald Lopez',
+    'name' => 'Bro. Brant Christensen',
     // 'subline' => ''
   ),
   // array(
@@ -141,12 +141,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Sister Alley',
-    'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Bro. Jim Fowler',
+    // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'By Invitation',
+    'name' => 'Bro. Doug Fowler',
     // 'subline' => ''
   )
 );
@@ -156,12 +156,14 @@ $meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
 $css_timestamp = filemtime('style.css');
 
 
-function makeHymnLink($title, $tune = '') {
+function makeHymnLink($hymnNum, $title, $tune = '') {
   $output = strtolower($title);
-  $output = preg_replace('/[\']+/u', '', $output);
+  $output = preg_replace('/[\'\?]+/u', '', $output);
   $output = preg_replace('/[\s\pP]+/u', '-', $output);
   $output .= (strlen($tune) > 0 ? '-'.strtolower($tune) : '');
-  $output = "https://www.churchofjesuschrist.org/study/manual/hymns/".$output."?lang=eng";
+  $output = ($hymnNum < 1000) ? 
+    "https://www.churchofjesuschrist.org/study/manual/hymns/".$output."?lang=eng" :
+    "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/".$output."?lang=eng";
   return $output;
 }
 
@@ -180,6 +182,8 @@ function printItem($individual) {
 
 function printHymn($hymn) {
   $hymn['tune'] = isset($hymn['tune']) ? $hymn['tune'] : FALSE;
+  $bookReference = ($hymn['reference'] < 1000) ? "Hymns" : "Hymns&mdash;For Home and Church";
+  $bookReference .= " - No. ".$hymn['reference'];
   $output = '<div class="line-item">';
   $output .= '<div class="left-item">'.$hymn["assignment"].'</div>';
   $output .= '<div class="right-item"><i>'.$hymn["name"];
@@ -189,7 +193,7 @@ function printHymn($hymn) {
     $output .= '<div class="subline">'.$hymn["subline"].'</div>';
   }
   if (isset($hymn['reference'])) {
-    $output .= '<div class="subline"><a href="'.makeHymnLink($hymn['name'],$hymn['tune']).'" target="_blank">'.$hymn['reference'].'</a></div>';
+    $output .= '<div class="subline"><a href="'.makeHymnLink($hymn['reference'], $hymn['name'], $hymn['tune']).'" target="_blank">'.$bookReference.'</a></div>';
   }
   echo $output;
 }

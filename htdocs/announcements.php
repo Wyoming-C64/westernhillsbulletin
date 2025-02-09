@@ -26,6 +26,14 @@ $announcements = array(
     <div class='additional'>
       <div class='left-item'>Mar. 20, 7:00 pm</div>
       <div class='right-item'>Sealings</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Apr. 17, 7:00 pm</div>
+      <div class='right-item'>Endowments</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>May 17, 10:00 am</div>
+      <div class='right-item'>Initiatories</div>
     </div>"
   ),
   
