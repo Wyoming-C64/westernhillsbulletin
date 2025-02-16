@@ -59,19 +59,19 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 0,
-    'name' => " ",
+    'reference' => 147,
+    'name' => "Sweet Is the Work",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 0,
-    'name' => " ",
+    'reference' => 178,
+    'name' => "O Lord of Hosts",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 0,
-    'name' => " ",
+    'reference' => 252,
+    'name' => "Put Your Shoulder to the Wheel",
   ),
 );
 
@@ -181,7 +181,9 @@ function printItem($individual) {
 }
 
 function printHymn($hymn) {
-  if ($hymn['assignment'] == "Intermediate Hymn") {
+  if ($hymn['assignment'] == "Musical Number") {
+    printItem($hymn);
+  } else {
     $hymn['tune'] = isset($hymn['tune']) ? $hymn['tune'] : FALSE;
     $bookReference = ($hymn['reference'] < 1000) ? "Hymns" : "Hymns&mdash;For Home and Church";
     $bookReference .= " - No. ".$hymn['reference'];
@@ -197,8 +199,6 @@ function printHymn($hymn) {
       $output .= '<div class="subline"><a href="'.makeHymnLink($hymn['reference'], $hymn['name'], $hymn['tune']).'" target="_blank">'.$bookReference.'</a></div>';
     }
     echo $output;
-  } else {
-    printItem($hymn);
   }
 }
 
