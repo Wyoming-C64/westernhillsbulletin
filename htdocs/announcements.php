@@ -8,20 +8,48 @@ function mike_dump($v) {
 
 $announcements = array(
   array(
-    "title" => "Young Men / Young Women Calendar",
-    // "date" => strtotime("January 26, 2025"),
-    // "time" => strtotime("January 26, 2025 10:30:00"),
-    "description" => "<p>Bro. and Sis. Rees have put together a calendar for all upcoming youth events and meetings. You can access this shared document at: <br/><a class='long_url' href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/</a></p>"
+    "title" => "Temple Closure",
+    "date" => strtotime("February 24, 2025"),
+    "location" => "Colorado Fort Collins Temple",
+    // "time" => strtotime("February 21, 2025 20:30:00"),
+    "description" => "<p><strong>The Colorado Fort Collins Temple will be closed from February 24 through March 10.</strong></p>
+    <p><strong>The baptistry will remain closed an additional week through March 17.</strong></p>"
+  ),
+  array(
+    "title" => "Stake Temple Cleaning Assignment",
+    "date" => strtotime("February 21, 2025"),
+    "time" => strtotime("February 21, 2025 20:30:00"),
+    "location" => "Colorado Fort Collins Temple",
+    "description" => "<p>Endowed volunteers are needed to help with a Stake Temple Cleaning Assignment this coming Friday evening, February 21, 2025. Volunteers should come in Sunday dress to the Recommend Desk at 8:30 <span class='small-caps'>pm</span> with their current Temple Recommend. After brief instructions, you will change into the temple work clothes which are provided.</p>
+    <p>Please contact Bro. Steve Garber by phone, text, or email listed below if you are available to volunteer so that he can communicate to the temple that our stake is able to fulfill our assignment.</p>
+    <p>Bro. Steve Garber's contact information:</p> 
+    <div class='additional'>
+      <div class='left-item'>Cell</div>
+      <div class='right-item'><a href='tel:+13076402885'>(307) 640-2885</a></div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Email</div>
+      <div class='right-item'><a href='mailto:Steve Garber &lt;sdgarbs@gmail.com&gt;?subject=Feb. 21 Temple Cleaning Assignment'>sdgarbs@gmail.com</a></div>
+    </div>"
   ),
   array(
     "title" => "2025 Ward Temple Schedule",
     "date" => strtotime("February 21, 2025"),
     "time" => strtotime("February 21, 2025 19:00:00"),
+    "location" => "Colorado Fort Collins Temple",
     "description" => "<p>Here are the upcoming ward temple events. Please make your own reservations on LDS Tools.</p>
     <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
     <div class='additional'>
       <div class='left-item'>Feb. 21, 7:00 pm</div>
       <div class='right-item'>Endowments</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Feb. 24&mdash;Mar. 10</div>
+      <div class='right-item'><span class='strong-small-caps'>temple closed</span></div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Feb. 24&mdash;Mar. 17</div>
+      <div class='right-item'><span class='strong-small-caps'>baptistry closed</span></div>
     </div>
     <div class='additional'>
       <div class='left-item'>Mar. 20, 7:00 pm</div>
@@ -35,6 +63,12 @@ $announcements = array(
       <div class='left-item'>May 17, 10:00 am</div>
       <div class='right-item'>Initiatories</div>
     </div>"
+  ),
+  array(
+    "title" => "Young Men / Young Women Calendar",
+    // "date" => strtotime("January 26, 2025"),
+    // "time" => strtotime("January 26, 2025 10:30:00"),
+    "description" => "<p>Bro. and Sis. Rees have put together a calendar for all upcoming youth events and meetings. You can access this shared document at: <br/><a class='long_url' href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/</a></p>"
   ),
   
 
@@ -50,7 +84,7 @@ $announcements = array(
     preference):</p>
     <div class='line-item'>
       <div class='left-item'>Email</div>
-      <div class='right-item'><a href='mailto:wyoming.c64@gmail.com'>wyoming.c64@gmail.com</a></div>
+      <div class='right-item'><a href='mailto:Mike Lewis &lt;wyoming.c64@gmail.com&gt;?subject=Announcement for Ward Bulletin'>wyoming.c64@gmail.com</a></div>
     </div>
     <div class='additional'>
       <div class='left-item'>Text Message</div>
