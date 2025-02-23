@@ -12,8 +12,8 @@ $announcements = array(
     "date" => strtotime("February 24, 2025"),
     "location" => "Colorado Fort Collins Temple",
     // "time" => strtotime("February 21, 2025 20:30:00"),
-    "description" => "<p><strong>The Colorado Fort Collins Temple will be closed from February 24 through March 10.</strong></p>
-    <p><strong>The baptistry will remain closed an additional week through March 17.</strong></p>"
+    "description" => "<p>The Colorado Fort Collins Temple will be closed from February 24 through March 10.</p>
+    <p>The baptistry will remain closed an additional week through March 17.</p>"
   ),
   array(
     "title" => "2025 Ward Temple Schedule",
