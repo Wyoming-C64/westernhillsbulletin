@@ -12,21 +12,21 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  array(
-    'assignment' => 'Presiding',
-    'name' => 'Bishop Jason Whiting',
-    'subline' => ''
-  ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
+  // ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Michael Howard',
   //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bro. Ken Burke',
-  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
-  // ),
+  array(
+    'assignment' => 'Presiding',
+    'name' => 'Bro. Ken Burke',
+    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  ),
   // array(
   //   'assignment' => 'Conducting',
   //   'name' => 'Bishop Jason Whiting',
@@ -40,7 +40,7 @@ $leaders = array(
   array(
     'assignment' => 'Conducting',
     'name' => 'Bro. Ken Burke',
-    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+    // 'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   ),
   array(
     'assignment' => 'Chorister',
@@ -59,46 +59,47 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 147,
-    'name' => "Sweet Is the Work",
+    'reference' => 2,
+    'name' => "The Spirit of God",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 178,
-    'name' => "O Lord of Hosts",
+    'reference' => 189,
+    'name' => "O Thou, Before the World Began",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 252,
-    'name' => "Put Your Shoulder to the Wheel",
+    'reference' => 1028,
+    'name' => "This Little Light of Mine",
+    'href' => "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/this-little-light-of-mine-release-3?lang=eng"
   ),
 );
 
 $intermissionMusic = array(
   // array(
   //   'assignment' => 'Intermediate Hymn',
-  //   'name' => "Where Can I Turn for Peace?",
-  //   'reference' => 129,
+  //   'name' => "",
+  //   'reference' => 0,
   //   // 'tune' => "",
   // ),
   array(
     'assignment' => 'Musical Number',
-    'name' => "<i>God's Gracious Love</i>",
-    'subline' => "Bro. Sean Trinnaman"
+    'name' => "<i>Love One Another</i>",
+    'subline' => "Piano Solo - Sis. Chelsea Williams"
   )
 );
 
 $firstSpeakers = array(
-  array(
-    'assignment' => 'Youth Speaker',
-    'name' => 'Bro. Braden Lewis',
-    // 'subline' => 'Colorado Fort Collins Mission'
-  ),
+  // array(
+  //   'assignment' => 'Youth Speaker',
+  //   'name' => 'Bro. Braden Lewis',
+  //   // 'subline' => 'Colorado Fort Collins Mission'
+  // ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Sister Engstrom',
-    'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Sis. Lynn Huylar',
+    // 'subline' => 'Colorado Fort Collins Mission'
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -116,8 +117,8 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Sister Alley',
-    'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Bro. Gary Hall',
+    // 'subline' => 'Colorado Fort Collins Mission'
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -141,12 +142,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Bro. Robert Huylar',
+    'name' => 'By Invitation',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Teila Walker',
+    'name' => 'Sis. Natalie Williams',
     // 'subline' => ''
   )
 );
@@ -156,15 +157,19 @@ $meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
 $css_timestamp = filemtime('style.css');
 
 
-function makeHymnLink($hymnNum, $title, $tune = '') {
+function makeHymnLink($hymnNum, $title, $tune = '', $href=NULL) {
   $output = strtolower($title);
   $output = preg_replace('/[\'\?]+/u', '', $output);
   $output = preg_replace('/[\s\pP]+/u', '-', $output);
   $output .= (strlen($tune) > 0 ? '-'.strtolower($tune) : '');
+  if (isset($href)) {
+    $output = $href;
+  } else {
   $output = ($hymnNum < 1000) ? 
     "https://www.churchofjesuschrist.org/study/manual/hymns/".$output."?lang=eng" :
     "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/".$output."?lang=eng";
-  return $output;
+  }
+    return $output;
 }
 
 
@@ -185,6 +190,7 @@ function printHymn($hymn) {
     printItem($hymn);
   } else {
     $hymn['tune'] = isset($hymn['tune']) ? $hymn['tune'] : FALSE;
+    $hymn['href'] = isset($hymn['href']) ? $hymn['href'] : NULL;
     $bookReference = ($hymn['reference'] < 1000) ? "Hymns" : "Hymns&mdash;For Home and Church";
     $bookReference .= " - No. ".$hymn['reference'];
     $output = '<div class="line-item">';
@@ -196,7 +202,7 @@ function printHymn($hymn) {
       $output .= '<div class="subline">'.$hymn["subline"].'</div>';
     }
     if (isset($hymn['reference'])) {
-      $output .= '<div class="subline"><a href="'.makeHymnLink($hymn['reference'], $hymn['name'], $hymn['tune']).'" target="_blank">'.$bookReference.'</a></div>';
+      $output .= '<div class="subline"><a href="'.makeHymnLink($hymn['reference'], $hymn['name'], $hymn['tune'], $hymn['href']).'" target="_blank">'.$bookReference.'</a></div>';
     }
     echo $output;
   }
