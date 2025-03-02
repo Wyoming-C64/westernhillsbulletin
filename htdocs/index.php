@@ -12,43 +12,43 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bishop Jason Whiting',
-  //   'subline' => ''
-  // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bro. Michael Howard',
-  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
-  // ),
   array(
     'assignment' => 'Presiding',
-    'name' => 'Bro. Ken Burke',
-    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
   // array(
-  //   'assignment' => 'Conducting',
-  //   'name' => 'Bishop Jason Whiting',
-  //   'subline' => ''
-  // ),
-  // array(
-  //   'assignment' => 'Conducting',
+  //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Michael Howard',
   //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bro. Ken Burke',
+  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   // ),
   array(
     'assignment' => 'Conducting',
-    'name' => 'Bro. Ken Burke',
-    // 'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bro. Ken Burke',
+  //   // 'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  // ),
   array(
     'assignment' => 'Chorister',
-    'name' => 'Sis. Adrienne Howard',
+    'name' => 'Sis. Jean Parks',
   ),
   array(
     'assignment' => 'Accompanist',
-    'name' => 'Sis. Pam Hall',
+    'name' => 'Bro. Jason Bird',
   ),
   // array(
   //   'assignment' => 'Accompanist',
@@ -59,20 +59,20 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 2,
-    'name' => "The Spirit of God",
+    'reference' => 62,
+    'name' => "All Creatures of Our God and King",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 189,
-    'name' => "O Thou, Before the World Began",
+    'reference' => 194,
+    'name' => "There Is a Green Hill Far Away",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 1028,
-    'name' => "This Little Light of Mine",
-    'href' => "https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/this-little-light-of-mine-release-3?lang=eng"
+    'reference' => 263,
+    'name' => "Go Forth With Faith",
+    // 'href' => ""
   ),
 );
 
@@ -83,11 +83,11 @@ $intermissionMusic = array(
   //   'reference' => 0,
   //   // 'tune' => "",
   // ),
-  array(
-    'assignment' => 'Musical Number',
-    'name' => "<i>Love One Another</i>",
-    'subline' => "Piano Solo - Sis. Chelsea Williams"
-  )
+  // array(
+  //   'assignment' => 'Musical Number',
+  //   'name' => "<i>Love One Another</i>",
+  //   'subline' => "Piano Solo - Sis. Chelsea Williams"
+  // )
 );
 
 $firstSpeakers = array(
@@ -142,12 +142,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'By Invitation',
+    'name' => 'Bro. Gary Hall',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Natalie Williams',
+    'name' => 'Sis. Carlie Bainbridge',
     // 'subline' => ''
   )
 );
