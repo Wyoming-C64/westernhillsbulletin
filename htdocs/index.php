@@ -42,47 +42,55 @@ $leaders = array(
   //   'name' => 'Bro. Ken Burke',
   //   // 'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   // ),
+  // array(
+  //   'assignment' => 'Chorister',
+  //   'name' => 'Sis. Jean Parks',
+  // ),
   array(
-    'assignment' => 'Chorister',
-    'name' => 'Sis. Jean Parks',
-  ),
-  array(
-    'assignment' => 'Accompanist',
-    'name' => 'Bro. Jason Bird',
-  ),
+      'assignment' => 'Chorister',
+      'name' => 'Sis. Adrienne Howard',
+    ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Bro. Pam Hall',
+  // ),
   // array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Jason Bird',
   // ),
+  array(
+    'assignment' => 'Accompanist',
+    'name' => 'Bro. Joey Bainbridge',
+  ),
 );
 
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 62,
-    'name' => "All Creatures of Our God and King",
+    'reference' => 5,
+    'name' => "High on the Mountain Top",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 194,
-    'name' => "There Is a Green Hill Far Away",
+    'reference' => 195,
+    'name' => "How Great the Wisdom and the Love",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 263,
-    'name' => "Go Forth With Faith",
+    'reference' => 1001,
+    'name' => "Come, Thou Fount of Every Blessing",
     // 'href' => ""
   ),
 );
 
 $intermissionMusic = array(
-  // array(
-  //   'assignment' => 'Intermediate Hymn',
-  //   'name' => "",
-  //   'reference' => 0,
-  //   // 'tune' => "",
-  // ),
+  array(
+    'assignment' => 'Intermediate Hymn',
+    'name' => "Amazing Grace",
+    'reference' => 1010,
+    // 'tune' => "",
+  ),
   // array(
   //   'assignment' => 'Musical Number',
   //   'name' => "<i>Love One Another</i>",
@@ -91,14 +99,14 @@ $intermissionMusic = array(
 );
 
 $firstSpeakers = array(
-  // array(
-  //   'assignment' => 'Youth Speaker',
-  //   'name' => 'Bro. Braden Lewis',
-  //   // 'subline' => 'Colorado Fort Collins Mission'
-  // ),
+  array(
+    'assignment' => 'Youth Speaker',
+    'name' => 'Sis. Sadie McKen',
+    // 'subline' => 'Colorado Fort Collins Mission'
+  ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Sis. Lynn Huylar',
+    'name' => 'Sis. Traci Kenney',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   // array(
@@ -117,7 +125,7 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Gary Hall',
+    'name' => 'Bro. John Walker',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   // array(
@@ -142,12 +150,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Bro. Gary Hall',
+    'name' => 'Bro. Braden Lewis',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Carlie Bainbridge',
+    'name' => 'Sis. Amber Norby',
     // 'subline' => ''
   )
 );

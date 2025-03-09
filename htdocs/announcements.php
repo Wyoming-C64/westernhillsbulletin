@@ -44,10 +44,39 @@ $announcements = array(
     </div>"
   ),
   array(
+    "title" => "Stake Youth Summer Activities",
+    "description" => "<p><b>Youth Conference 2025 (Youth Turning 14 and up)</b></p>
+
+    <p>June 23-25, 2025<br/>
+    Laramie County Community College Campus<br/>
+    $75 per youth</p>
+
+    <p>Registration Link and flyer to hand out is attached: (opens a Google Doc form)<br/>
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLSdcq77yn0s2J8Vzwg-Vaf4KKBYmZXAi17kUHoceltq1zdl-Ww/viewform' target='_blank' title='2025 Youth Conference Registration Form'>2025 Youth Conference Registration Form</a></p> 
+
+    <p><b>Young Women's Camp (ALL Young Women)</b></p>
+
+    <p>July 15-17, 2025<br/>
+    Camp Batel<br/>
+    $75 per camper</p>
+
+    <p>Registration Website: (opens a Weebly form)<br/>
+    <a href='https://csgirlscamp.weebly.com/' target='_blank' title='Young Women's Camp Registration'>https://csgirlscamp.weebly.com/</a></p>"
+  ),
+  array(
+    "title" => "Mission Preparation Class",
+    "date" => strtotime("Sunday, 6:00 pm"),
+    "time" => strtotime("Sunday, 6:00 pm"),
+    "location" => "1618 Grove Drive, Cheyenne, WY",
+    "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Rndy Davis and various returned missionares.</p>
+    <p>If you have questions, please direct them to Sis. Tia Little or Bro. Sam Shumway.</p>"
+  ),
+  array(
     "title" => "Young Men / Young Women Calendar",
     // "date" => strtotime("January 26, 2025"),
     // "time" => strtotime("January 26, 2025 10:30:00"),
-    "description" => "<p>Bro. and Sis. Rees have put together a calendar for all upcoming youth events and meetings. You can access this shared document at: <br/><a class='long_url' href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/</a></p>"
+    "description" => "<p>Bro. and Sis. Rees have put together a calendar (shared Google spreadsheet) for all upcoming youth events and meetings.</p>
+    <p>You can access this shared document at: <br/><a href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>Western Hills Youth Activities Calendar</a></p>"
   ),
   
 
