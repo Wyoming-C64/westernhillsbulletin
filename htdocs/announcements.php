@@ -47,7 +47,7 @@ $announcements = array(
       <p>Primary families are invited to tie a blanket, make a name tag and card, and assemble a hygiene kit for children entering foster care. The project should take 45 to 60 minutes, and refreshments will be served.</p>
       
       <p>Please RSVP at this website: <a href='https://forms.gle/obmhFp5BzXVG4DFe7' target='_blank' title='RSVP for Kids Helping Kids activity.'>https://forms.gle/obmhFp5BzXVG4DFe7</a> (Opens a Google document.)</p>
-      <p style='text-align: center'><img src='Hazels_Flier.jpg' style='width: 50%;'></p>"
+      <p style='text-align: center'><img src='Hazels_Flier.jpg' style='width: 75%;'></p>"
   ),
   array("title" => "Stake Primary: Stake Conference Rehersal",
     "date" => strtotime("April 27, 2025"),
