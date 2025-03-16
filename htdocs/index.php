@@ -54,32 +54,32 @@ $leaders = array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Pam Hall',
   // ),
-  // array(
-  //   'assignment' => 'Accompanist',
-  //   'name' => 'Bro. Jason Bird',
-  // ),
   array(
     'assignment' => 'Accompanist',
-    'name' => 'Bro. Joey Bainbridge',
+    'name' => 'Bro. Jason Bird',
   ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Bro. Joey Bainbridge',
+  // ),
 );
 
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 5,
-    'name' => "High on the Mountain Top",
+    'reference' => 113,
+    'name' => "Our Savior's Love",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 195,
-    'name' => "How Great the Wisdom and the Love",
-    // 'tune' => 'Hancock',
+    'reference' => 177,
+    'name' => "'Tis Sweet to Sing the Matchless Love",
+    'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 1001,
-    'name' => "Come, Thou Fount of Every Blessing",
+    'reference' => 136,
+    'name' => "I Know That My Redeemer Lives",
     // 'href' => ""
   ),
 );
@@ -87,8 +87,8 @@ $hymns = array(
 $intermissionMusic = array(
   array(
     'assignment' => 'Intermediate Hymn',
-    'name' => "Amazing Grace",
-    'reference' => 1010,
+    'name' => "Lead, Kindly Light",
+    'reference' => 97,
     // 'tune' => "",
   ),
   // array(
@@ -99,15 +99,15 @@ $intermissionMusic = array(
 );
 
 $firstSpeakers = array(
-  array(
-    'assignment' => 'Youth Speaker',
-    'name' => 'Sis. Sadie McKen',
-    // 'subline' => 'Colorado Fort Collins Mission'
-  ),
+  // array(
+  //   'assignment' => 'Youth Speaker',
+  //   'name' => '',
+  //   // 'subline' => 'Colorado Fort Collins Mission'
+  // ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Sis. Traci Kenney',
-    // 'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Sister Alley',
+    'subline' => 'Colorado Fort Collins Mission'
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -125,8 +125,8 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. John Walker',
-    // 'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Bro. Rick Telford',
+    'subline' => 'Cheyenne Stake High Council'
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -150,12 +150,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Bro. Braden Lewis',
+    'name' => 'Sis. Lynn Huylar',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Amber Norby',
+    'name' => 'Bro. Jeff Rees',
     // 'subline' => ''
   )
 );

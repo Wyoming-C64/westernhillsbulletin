@@ -7,13 +7,14 @@ function mike_dump($v) {
 }
 
 $announcements = array(
+  
   array(
-    "title" => "Temple Closure",
-    "date" => strtotime("February 24, 2025"),
-    "location" => "Colorado Fort Collins Temple",
-    // "time" => strtotime("February 21, 2025 20:30:00"),
-    "description" => "<p>The Colorado Fort Collins Temple will be closed from February 24 through March 10.</p>
-    <p>The baptistry will remain closed an additional week through March 17.</p>"
+    "title" => "Mission Preparation Class",
+    "date" => strtotime("Sunday, 6:00 pm"),
+    "time" => strtotime("Sunday, 6:00 pm"),
+    "location" => "1618 Grove Drive, Cheyenne, WY",
+    "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Randy Davis and various returned missionares.</p>
+    <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
   ),
   array(
     "title" => "2025 Ward Temple Schedule",
@@ -22,14 +23,6 @@ $announcements = array(
     "location" => "Colorado Fort Collins Temple",
     "description" => "<p>Here are the upcoming ward temple events. Please make your own reservations on LDS Tools.</p>
     <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
-    <div class='additional'>
-      <div class='left-item'>Feb. 24&mdash;Mar. 10</div>
-      <div class='right-item'><span class='strong-small-caps'>temple closed</span></div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Feb. 24&mdash;Mar. 17</div>
-      <div class='right-item'><span class='strong-small-caps'>baptistry closed</span></div>
-    </div>
     <div class='additional'>
       <div class='left-item'>Mar. 20, 7:00 pm</div>
       <div class='right-item'>Sealings</div>
@@ -42,6 +35,31 @@ $announcements = array(
       <div class='left-item'>May 17, 10:00 am</div>
       <div class='right-item'>Initiatories</div>
     </div>"
+  ),
+  array("title" => "Stake Primary: Kids Helping Kids",
+    "date" => strtotime("April 12, 2025"),
+    "time" => strtotime("April 12, 2025 13:00:00"),
+    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
+    "description" => "<p>Hello Primary Families!</p>
+      <p>We have 2 incredible Primary opportunities coming in April, and wanted to share more details:</p>
+      This event will be \"open house style\" at the Stake Center. In accordance with the General Primary Presidency's 2025 Primary Service Activity request, Monterey Heights Sr. Primary children have helped plan and organize projects to help Cheyenne's <i>Threads of Hope</i>&mdash;an organization that strives to assist families affected by Foster Care.</p> 
+
+      <p>Primary families are invited to tie a blanket, make a name tag and card, and assemble a hygiene kit for children entering foster care. The project should take 45 to 60 minutes, and refreshments will be served.</p>
+      
+      <p>Please RSVP at this website: <a href='https://forms.gle/obmhFp5BzXVG4DFe7' target='_blank' title='RSVP for Kids Helping Kids activity.'>https://forms.gle/obmhFp5BzXVG4DFe7</a> (Opens a Google document.)</p>
+      <p style='text-align: center'><img src='Hazels_Flier.jpg' style='width: 50%;'></p>"
+  ),
+  array("title" => "Stake Primary: Stake Conference Rehersal",
+    "date" => strtotime("April 27, 2025"),
+    "time" => strtotime("April 27, 2025 9:00:00"),
+    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
+    "description" => "<p>Stake Primary Children will be singing during the <span class='small-caps'>10:00 am</span> session of Stake Conference on Sunday, April 27. During Ward Conferences, each Primary learned <i>My Own Sacred Grove</i> with Pres. Sutphin, and he will lead the Primary children in singing for Stake Conference. All Primary children ages 3 through 11 are invited to participate.<p>
+
+    <p><b>Mark Your Calendars:</b> Before the Conference on Sunday morning, we will have a <span class='strong-small-caps'>9:00 am</span> performance Practice in the Chapel to prepare for the event. We hope to see you there!</p>
+
+    <p>In the meantime, here's a video link of the song to help you practice at home: <a href='https://www.youtube.com/watch?v=W8UnRqgDlr8' target='_blank' title='My Own Sacred Grove video.'>https://www.youtube.com/watch?v=W8UnRqgDlr8</a> (Opens in YouTube.)</p>
+
+    <p>Thanks!<br/>&nbsp;&nbsp;&nbsp;<i>~ Trisha, Christy, Carlie, and Kaylee</i>"
   ),
   array(
     "title" => "Stake Youth Summer Activities",
@@ -61,16 +79,10 @@ $announcements = array(
     $75 per camper</p>
 
     <p>Registration Website: (opens a Weebly form)<br/>
-    <a href='https://csgirlscamp.weebly.com/' target='_blank' title='Young Women's Camp Registration'>https://csgirlscamp.weebly.com/</a></p>"
+    <a href='https://csgirlscamp.weebly.com/' target='_blank' title='Young Women's Camp Registration'>https://csgirlscamp.weebly.com/</a></p>
+    <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
   ),
-  array(
-    "title" => "Mission Preparation Class",
-    "date" => strtotime("Sunday, 6:00 pm"),
-    "time" => strtotime("Sunday, 6:00 pm"),
-    "location" => "1618 Grove Drive, Cheyenne, WY",
-    "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Rndy Davis and various returned missionares.</p>
-    <p>If you have questions, please direct them to Sis. Tia Little or Bro. Sam Shumway.</p>"
-  ),
+  
   array(
     "title" => "Young Men / Young Women Calendar",
     // "date" => strtotime("January 26, 2025"),
