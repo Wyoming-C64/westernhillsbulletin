@@ -18,15 +18,11 @@ $announcements = array(
   ),
   array(
     "title" => "2025 Ward Temple Schedule",
-    "date" => strtotime("March 20, 2025"),
-    "time" => strtotime("March 20, 2025 19:00:00"),
+    "date" => strtotime("April 17, 2025"),
+    "time" => strtotime("April 17, 2025 19:00:00"),
     "location" => "Colorado Fort Collins Temple",
     "description" => "<p>Here are the upcoming ward temple events. Please make your own reservations on LDS Tools.</p>
     <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
-    <div class='additional'>
-      <div class='left-item'>Mar. 20, 7:00 pm</div>
-      <div class='right-item'>Sealings</div>
-    </div>
     <div class='additional'>
       <div class='left-item'>Apr. 17, 7:00 pm</div>
       <div class='right-item'>Endowments</div>
@@ -34,6 +30,10 @@ $announcements = array(
     <div class='additional'>
       <div class='left-item'>May 17, 10:00 am</div>
       <div class='right-item'>Initiatories</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Jun. 13, 7:00 pm</div>
+      <div class='right-item'>Endowments</div>
     </div>"
   ),
   array("title" => "Stake Primary: Kids Helping Kids",
@@ -47,7 +47,7 @@ $announcements = array(
       <p>Primary families are invited to tie a blanket, make a name tag and card, and assemble a hygiene kit for children entering foster care. The project should take 45 to 60 minutes, and refreshments will be served.</p>
       
       <p>Please RSVP at this website: <a href='https://forms.gle/obmhFp5BzXVG4DFe7' target='_blank' title='RSVP for Kids Helping Kids activity.'>https://forms.gle/obmhFp5BzXVG4DFe7</a> (Opens a Google document.)</p>
-      <p style='text-align: center'><img src='Hazels_Flier.jpg' style='width: 75%;'></p>"
+      <p style='text-align: center'><img src='KHK_Flier.jpg' style='width: 100%;'></p>"
   ),
   array("title" => "Stake Primary: Stake Conference Rehersal",
     "date" => strtotime("April 27, 2025"),

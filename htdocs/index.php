@@ -50,14 +50,14 @@ $leaders = array(
       'assignment' => 'Chorister',
       'name' => 'Sis. Adrienne Howard',
     ),
-  // array(
-  //   'assignment' => 'Accompanist',
-  //   'name' => 'Bro. Pam Hall',
-  // ),
   array(
     'assignment' => 'Accompanist',
-    'name' => 'Bro. Jason Bird',
+    'name' => 'Bro. Pam Hall',
   ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Bro. Jason Bird',
+  // ),
   // array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Joey Bainbridge',
@@ -67,19 +67,19 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 113,
-    'name' => "Our Savior's Love",
+    'reference' => 127,
+    'name' => "Does the Journey Seem Long?",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 177,
-    'name' => "'Tis Sweet to Sing the Matchless Love",
-    'tune' => 'Hancock',
+    'reference' => 192,
+    'name' => "He Died! The Great Redeemer Died",
+    // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 136,
-    'name' => "I Know That My Redeemer Lives",
+    'reference' => 1004,
+    'name' => "I Will Walk With Jesus",
     // 'href' => ""
   ),
 );
@@ -87,8 +87,8 @@ $hymns = array(
 $intermissionMusic = array(
   array(
     'assignment' => 'Intermediate Hymn',
-    'name' => "Lead, Kindly Light",
-    'reference' => 97,
+    'name' => "When Faith Endures",
+    'reference' => 128,
     // 'tune' => "",
   ),
   // array(
@@ -99,15 +99,15 @@ $intermissionMusic = array(
 );
 
 $firstSpeakers = array(
-  // array(
-  //   'assignment' => 'Youth Speaker',
-  //   'name' => '',
-  //   // 'subline' => 'Colorado Fort Collins Mission'
-  // ),
+  array(
+    'assignment' => 'Youth Speaker',
+    'name' => 'Bro. Lincoln Kenney',
+    // 'subline' => 'Colorado Fort Collins Mission'
+  ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Sister Alley',
-    'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Sis. Tiffany Walker',
+    // 'subline' => 'Colorado Fort Collins Mission'
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -125,8 +125,8 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Rick Telford',
-    'subline' => 'Cheyenne Stake High Council'
+    'name' => 'Bro. Dean Dexter',
+    // 'subline' => 'Cheyenne Stake High Council'
   ),
   // array(
   //   'assignment' => 'Speaker',
@@ -150,12 +150,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Sis. Lynn Huylar',
+    'name' => 'Bro. George Parks',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. Jeff Rees',
+    'name' => 'Sis. Annie Whiting',
     // 'subline' => ''
   )
 );
