@@ -12,31 +12,31 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  array(
-    'assignment' => 'Presiding',
-    'name' => 'Bishop Jason Whiting',
-    'subline' => ''
-  ),
   // array(
   //   'assignment' => 'Presiding',
-  //   'name' => 'Bro. Michael Howard',
-  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
   // ),
+  array(
+    'assignment' => 'Presiding',
+    'name' => 'Bro. Michael Howard',
+    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Ken Burke',
   //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
   // ),
-  array(
-    'assignment' => 'Conducting',
-    'name' => 'Bishop Jason Whiting',
-    'subline' => ''
-  ),
   // array(
   //   'assignment' => 'Conducting',
-  //   'name' => 'Bro. Michael Howard',
-  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
   // ),
+  array(
+    'assignment' => 'Conducting',
+    'name' => 'Bro. Michael Howard',
+    // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  ),
   // array(
   //   'assignment' => 'Conducting',
   //   'name' => 'Bro. Ken Burke',
@@ -67,19 +67,19 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 127,
-    'name' => "Does the Journey Seem Long?",
+    'reference' => 86,
+    'name' => "How Great Thou Art",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 192,
-    'name' => "He Died! The Great Redeemer Died",
+    'reference' => 185,
+    'name' => "Reverently and Meekly Now",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 1004,
-    'name' => "I Will Walk With Jesus",
+    'reference' => 6,
+    'name' => "Redeemer of Israel",
     // 'href' => ""
   ),
 );
@@ -87,8 +87,8 @@ $hymns = array(
 $intermissionMusic = array(
   array(
     'assignment' => 'Intermediate Hymn',
-    'name' => "When Faith Endures",
-    'reference' => 128,
+    'name' => "God's Gracious Love",
+    'reference' => 1013,
     // 'tune' => "",
   ),
   // array(
@@ -101,12 +101,12 @@ $intermissionMusic = array(
 $firstSpeakers = array(
   array(
     'assignment' => 'Youth Speaker',
-    'name' => 'Bro. Lincoln Kenney',
+    'name' => 'Sis. Mylee Walker',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   array(
     'assignment' => 'Speaker',
-    'name' => 'Sis. Tiffany Walker',
+    'name' => 'Sis. Alexis Mitchell',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   // array(
@@ -125,7 +125,7 @@ $firstSpeakers = array(
 $secondSpeakers = array(
   array(
     'assignment' => 'Speaker',
-    'name' => 'Bro. Dean Dexter',
+    'name' => 'Bro. Devon Williams',
     // 'subline' => 'Cheyenne Stake High Council'
   ),
   // array(
@@ -150,12 +150,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Bro. George Parks',
+    'name' => 'Sis. Ann Christensen',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Annie Whiting',
+    'name' => 'Bro. R.J. Walker',
     // 'subline' => ''
   )
 );
