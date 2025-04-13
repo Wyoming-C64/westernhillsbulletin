@@ -36,19 +36,6 @@ $announcements = array(
       <div class='right-item'>Endowments</div>
     </div>"
   ),
-  array("title" => "Stake Primary: Kids Helping Kids",
-    "date" => strtotime("April 12, 2025"),
-    "time" => strtotime("April 12, 2025 13:00:00"),
-    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => "<p>Hello Primary Families!</p>
-      <p>We have 2 incredible Primary opportunities coming in April, and wanted to share more details:</p>
-      This event will be \"open house style\" at the Stake Center. In accordance with the General Primary Presidency's 2025 Primary Service Activity request, Monterey Heights Sr. Primary children have helped plan and organize projects to help Cheyenne's <i>Threads of Hope</i>&mdash;an organization that strives to assist families affected by Foster Care.</p> 
-
-      <p>Primary families are invited to tie a blanket, make a name tag and card, and assemble a hygiene kit for children entering foster care. The project should take 45 to 60 minutes, and refreshments will be served.</p>
-      
-      <p>Please RSVP at this website: <a href='https://forms.gle/obmhFp5BzXVG4DFe7' target='_blank' title='RSVP for Kids Helping Kids activity.'>https://forms.gle/obmhFp5BzXVG4DFe7</a> (Opens a Google document.)</p>
-      <p style='text-align: center'><img src='KHK_Flier.jpg' style='width: 100%;'></p>"
-  ),
   array("title" => "Stake Primary: Stake Conference Rehersal",
     "date" => strtotime("April 27, 2025"),
     "time" => strtotime("April 27, 2025 9:00:00"),
@@ -60,6 +47,34 @@ $announcements = array(
     <p>In the meantime, here's a video link of the song to help you practice at home: <a href='https://www.youtube.com/watch?v=W8UnRqgDlr8' target='_blank' title='My Own Sacred Grove video.'>https://www.youtube.com/watch?v=W8UnRqgDlr8</a> (Opens in YouTube.)</p>
 
     <p>Thanks!<br/>&nbsp;&nbsp;&nbsp;<i>~ Trisha, Christy, Carlie, and Kaylee</i>"
+  ),
+  array(
+    "title" => "Stake Temple Day",
+    "date" => strtotime("May 3, 2025"),
+    "time" => strtotime("May 3, 2025 14:00"),
+    "location" => "Colorado Fort Collins Temple",
+    "description" => "<p>Cheyenne Stake Temple Day is scheduled for May 3rd. The Temple Presidency has reserved ordinances for our Stake starting at <span class='small-caps'>2:00 pm</span>. Please note that the starting times on the sign-up sheet are the starting times for the ordinances and plan to arrive at least 15 minutes early to prepare. If you have a living ordinance that you would like to have completed during the Stake Temple Day, please contact <a href='mailto:Steven%20Garber%20&lt;sdgarbs@gmail.com&gt;' target='_blank'>Bro. Steven Garber</a> and he will help you to coordinate with the Temple office.</p>
+
+    <p>This is a wonderful opportunity for our Stake to gather together in the House of the Lord. If you would like to reserve an ordinance and time slot, please sign up using the link below: (opens a sign-up form at SignupGenius.com)</p>
+    <p><a href='https://www.signupgenius.com/go/70A054DACAF28A2FB6-55741559-cheyenne' target='_blank'>Stake Temple Day Sign Up</a>"
+  ),
+  array(
+    "title" => "Denver Regional YSA Conference",
+    "date" => strtotime("May 29, 2025"),
+    "enddate" => strtotime("May 31, 2025"),
+    "location" => "Highlands Ranch, Colorado",
+    "description" => '<p>Under the direction of the North America Central Area Presidency there will be a Denver Regional Young Single Adult Conference taking place May 29-31, 2025 in Highlands Ranch, CO. This will be a tremendous opportunity for our YSAs (ages 18-35) to gather in a "Think Celestial" spirit of learning, serving, and socializing.</p>
+    
+    <p>Highlights will include temple worship, outdoor activities, service projects, and a dance. <i><b>Outdoor activities are on a first-come, first-serve basis, so register as soon as possible!</b></i> Workshop teachers and keynote speakers will include two general authority seventies, two Church historians, and other very engaging speakers.</p>
+    
+    <p>Registration price of $50 per person includes food, lodging, and activities. Use the link below to register today and follow the official social media pages for more conference information.</p>
+    
+    <p><b>Registration Link:</b> (opens official registration page at Cvent.com)<br/>
+    <a href="https://cvent.me/2Zbbw2?rt=iedpfVqUskeBAReXZ8fOxw" target="_blank">Denver Regional YSA Conference Registration</a>.<br/></p>
+
+    <p><b>Follow on:</b><br/>
+    Facebook - <a href="https://www.facebook.com/profile.php?id=61558056483060" target="_blank">Denver YSA Conference</a><br/>
+    Instagram - <a href="https://www.instagram.com/DenverYSAConference/" target="_blank">@DenverYSAConference</a></p>'
   ),
   array(
     "title" => "Stake Youth Summer Activities",
@@ -129,6 +144,14 @@ function printAnnouncement($item) {
   
     if (isset($item['time'])) {
       $output .= date(" - g:i a",$item['time']);
+    }
+
+    if (isset($item['enddate'])) {
+      $output .= " &mdash; ".date("F j, Y",$item['enddate']);
+    }
+
+    if (isset($item['endtime'])) {
+      $output .= date(" - g:i a",$item['endtime']);
     }
     $output .= "</div>";
   }

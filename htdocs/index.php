@@ -12,16 +12,16 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bishop Jason Whiting',
-  //   'subline' => ''
-  // ),
   array(
     'assignment' => 'Presiding',
-    'name' => 'Bro. Michael Howard',
-    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Ken Burke',
@@ -35,7 +35,7 @@ $leaders = array(
   array(
     'assignment' => 'Conducting',
     'name' => 'Bro. Michael Howard',
-    // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   ),
   // array(
   //   'assignment' => 'Conducting',
@@ -50,14 +50,14 @@ $leaders = array(
       'assignment' => 'Chorister',
       'name' => 'Sis. Adrienne Howard',
     ),
-  array(
-    'assignment' => 'Accompanist',
-    'name' => 'Bro. Pam Hall',
-  ),
   // array(
   //   'assignment' => 'Accompanist',
-  //   'name' => 'Bro. Jason Bird',
+  //   'name' => 'Bro. Pam Hall',
   // ),
+  array(
+    'assignment' => 'Accompanist',
+    'name' => 'Bro. Jason Bird',
+  ),
   // array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Joey Bainbridge',
@@ -67,30 +67,30 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 86,
-    'name' => "How Great Thou Art",
+    'reference' => 78,
+    'name' => "God of Our Fathers, Whose Almighty Hand",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 185,
-    'name' => "Reverently and Meekly Now",
+    'reference' => 1008,
+    'name' => "Bread of Life, Living Water",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 6,
-    'name' => "Redeemer of Israel",
+    'reference' => 9,
+    'name' => "Come Rejoice",
     // 'href' => ""
   ),
 );
 
 $intermissionMusic = array(
-  array(
-    'assignment' => 'Intermediate Hymn',
-    'name' => "God's Gracious Love",
-    'reference' => 1013,
-    // 'tune' => "",
-  ),
+  // array(
+  //   'assignment' => 'Intermediate Hymn',
+  //   'name' => "God's Gracious Love",
+  //   'reference' => 1013,
+  //   // 'tune' => "",
+  // ),
   // array(
   //   'assignment' => 'Musical Number',
   //   'name' => "<i>Love One Another</i>",
@@ -150,12 +150,12 @@ $secondSpeakers = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Sis. Ann Christensen',
+    'name' => 'Sis. Shayli McKen ',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. R.J. Walker',
+    'name' => 'Bro. Chris Lewis',
     // 'subline' => ''
   )
 );

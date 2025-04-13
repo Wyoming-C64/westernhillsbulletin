@@ -1,6 +1,6 @@
 <?php
 
-$meetingDate = strtotime('March 30, 2025 10:30:00 am');
-$Fast_And_Testimony = FALSE;
+$meetingDate = strtotime('April 13, 2025 10:30:00 am');
+$Fast_And_Testimony = TRUE;
 
 ?>
