@@ -1,4 +1,7 @@
 <?php 
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false); // For IE
+header("Pragma: no-cache"); // HTTP/1.0
 
 function mike_dump($v) {
   echo "<pre>";
@@ -8,25 +11,21 @@ function mike_dump($v) {
 
 $announcements = array(
   
-  array(
-    "title" => "Mission Preparation Class",
-    "date" => strtotime("Sunday, 6:00 pm"),
-    "time" => strtotime("Sunday, 6:00 pm"),
-    "location" => "1618 Grove Drive, Cheyenne, WY",
-    "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Randy Davis and various returned missionares.</p>
-    <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
-  ),
+  // array(
+  //   "title" => "Mission Preparation Class",
+  //   "date" => strtotime("Sunday, 6:00 pm"),
+  //   "time" => strtotime("Sunday, 6:00 pm"),
+  //   "location" => "1618 Grove Drive, Cheyenne, WY",
+  //   "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Randy Davis and various returned missionares.</p>
+  //   <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
+  // ),
   array(
     "title" => "2025 Ward Temple Schedule",
-    "date" => strtotime("April 17, 2025"),
-    "time" => strtotime("April 17, 2025 19:00:00"),
+    "date" => strtotime("May 17, 2025"),
+    "time" => strtotime("May 17, 2025 10:00:00"),
     "location" => "Colorado Fort Collins Temple",
     "description" => "<p>Here are the upcoming ward temple events. Please make your own reservations on LDS Tools.</p>
     <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
-    <div class='additional'>
-      <div class='left-item'>Apr. 17, 7:00 pm</div>
-      <div class='right-item'>Endowments</div>
-    </div>
     <div class='additional'>
       <div class='left-item'>May 17, 10:00 am</div>
       <div class='right-item'>Initiatories</div>
@@ -34,6 +33,10 @@ $announcements = array(
     <div class='additional'>
       <div class='left-item'>Jun. 13, 7:00 pm</div>
       <div class='right-item'>Endowments</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Jul. 17, 7:00 pm</div>
+      <div class='right-item'>Sealings</div>
     </div>"
   ),
   array("title" => "Stake Primary: Stake Conference Rehersal",
@@ -134,7 +137,6 @@ $announcements = array(
 );
 
 require('globals.php');
-$css_timestamp = filemtime('style.css');
 
 function printAnnouncement($item) {
   $output = '<div class="announcement">';

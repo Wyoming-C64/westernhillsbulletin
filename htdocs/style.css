@@ -25,9 +25,17 @@ h1 {
 }
 
 h2 {
+  margin: 2em 0;
   font-size: 1.1em;
   font-variant: small-caps;
-  margin: 2em 0;
+}
+
+.special-day {
+  margin: 0.5em 0;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.25em;
 }
 
 .announcement-title {
@@ -126,7 +134,7 @@ a:visited {
   display: grid;
   grid-template-columns: auto max-content;
   grid-template-areas: "left right";
-  align-items: end;
+  align-items: start;
   gap: 0 .25rem;
 }
 
@@ -197,6 +205,7 @@ main .additional {
   font-family: 'EB Garamond';
   font-weight: 500;
   grid-area: right;
+  text-align: right;
 }
 
 .description .right-item {

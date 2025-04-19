@@ -1,4 +1,7 @@
 <?php 
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false); // For IE
+header("Pragma: no-cache"); // HTTP/1.0
 
 function mike_dump($v) {
   echo "<pre>";
@@ -12,16 +15,16 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  array(
-    'assignment' => 'Presiding',
-    'name' => 'Bishop Jason Whiting',
-    'subline' => ''
-  ),
   // array(
   //   'assignment' => 'Presiding',
-  //   'name' => 'Bro. Michael Howard',
-  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
   // ),
+  array(
+    'assignment' => 'Presiding',
+    'name' => 'Bro. Michael Howard',
+    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Ken Burke',
@@ -35,7 +38,7 @@ $leaders = array(
   array(
     'assignment' => 'Conducting',
     'name' => 'Bro. Michael Howard',
-    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   ),
   // array(
   //   'assignment' => 'Conducting',
@@ -54,10 +57,14 @@ $leaders = array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Pam Hall',
   // ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Bro. Jason Bird',
+  // ),
   array(
-    'assignment' => 'Accompanist',
-    'name' => 'Bro. Jason Bird',
-  ),
+    'assignment' => 'Accompanists',
+    'name' => 'Sis. Pam Hall<br/>Bro. Jason Bird'
+  )
   // array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Joey Bainbridge',
@@ -67,103 +74,132 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 78,
-    'name' => "God of Our Fathers, Whose Almighty Hand",
+    'reference' => 6,
+    'name' => "Redeemer of Israel",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 1008,
-    'name' => "Bread of Life, Living Water",
+    'reference' => 178,
+    'name' => "O Lord of Hosts",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 9,
-    'name' => "Come Rejoice",
+    'reference' => 200,
+    'name' => "Christ the Lord Is Risen Today",
     // 'href' => ""
   ),
 );
 
-$intermissionMusic = array(
-  // array(
-  //   'assignment' => 'Intermediate Hymn',
-  //   'name' => "God's Gracious Love",
-  //   'reference' => 1013,
-  //   // 'tune' => "",
-  // ),
-  // array(
-  //   'assignment' => 'Musical Number',
-  //   'name' => "<i>Love One Another</i>",
-  //   'subline' => "Piano Solo - Sis. Chelsea Williams"
-  // )
-);
-
-$firstSpeakers = array(
+$program = array(
   array(
-    'assignment' => 'Youth Speaker',
-    'name' => 'Sis. Mylee Walker',
-    // 'subline' => 'Colorado Fort Collins Mission'
+    'type' => 'speaker',
+    'content' =>  array(
+      'assignment' => 'Speaker',
+      'name' => 'Sis. Jerzie Martinez',
+      'subline' => '<i>The Garden of Gesthemane</i>'
+    ),
   ),
   array(
-    'assignment' => 'Speaker',
-    'name' => 'Sis. Alexis Mitchell',
-    // 'subline' => 'Colorado Fort Collins Mission'
+    'type' => 'music',
+    'content' =>  array(
+      'assignment' => 'Musical Number',
+      'name' => "<i>Gesthemane</i>",
+      'subline' => "Children's Choir",
+    ),
   ),
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => '',
-  //   'subline' => ''
-  // ),
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => '',
-  //   'subline' => ''
-  // ),
-  
-);
-
-$secondSpeakers = array(
   array(
-    'assignment' => 'Speaker',
-    'name' => 'Bro. Devon Williams',
-    // 'subline' => 'Cheyenne Stake High Council'
+    'type' => 'speaker',
+    'content' =>  array(
+      'assignment' => 'Speaker',
+      'name' => 'Bro. Willet Bird',
+      'subline' => '<i>Judas and Caiaphas</i>'
+    ),
   ),
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => '',
-  //   'subline' => ''
-  // ),
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => '',
-  //   'subline' => ''
-  // ),
-  // array(
-  //   'assignment' => 'Speaker',
-  //   'name' => '',
-  //   'subline' => ''
-  // ),
-  
+  array(
+    'type' => 'music',
+    'content' =>  array(
+      'assignment' => 'Intermediate Hymn',
+      'name' => "I Stand All Amazed",
+      'reference' => 193,
+      // 'tune' => "",
+    ),
+  ),
+  array(
+    'type' => 'speaker',
+    'content' =>  array(
+      'assignment' => 'Speaker',
+      'name' => 'Sis. Brayli McKen',
+      'subline' => '<i>Peter, Pilate, and a Crown</i>'
+    ),
+  ),
+  array(
+    'type' => 'music',
+    'content' =>  array(
+      'assignment' => 'Intermediate Hymn',
+      'name' => "I Believe in Christ",
+      'reference' => 134,
+      // 'tune' => "",
+    ),
+  ),
+  array(
+    'type' => 'speaker',
+    'content' =>  array(
+      'assignment' => 'Speaker',
+      'name' => 'Chris Lewis',
+      'subline' => '<i>The Crucifixion</i>'
+    ),
+  ),
+  array(
+    'type' => 'music',
+    'content' =>  array(
+      'assignment' => 'Intermediate Hymn',
+      'name' => "Were You There?",
+      'reference' => 1206,
+      // 'tune' => "",
+    ),
+  ),
+  array(
+    'type' => 'speaker',
+    'content' =>  array(
+      'assignment' => 'Speaker',
+      'name' => 'Sadie McKen',
+      'subline' => '<i>Joseph of Aramathia and Mary Magdalene</i>'
+    ),
+  ),
+  array(
+    'type' => 'music',
+    'content' =>  array(
+      'assignment' => 'Intermediate Hymn',
+      'name' => "He Died! The Great Redeemer Died",
+      'reference' => 192,
+      // 'tune' => "",
+    ),
+  ),
+  array(
+    'type' => 'speaker',
+    'content' =>  array(
+      'assignment' => 'Speaker',
+      'name' => 'Logan Howard',
+      'subline' => '<i>Witnesses of the Ressurected Christ</i>'
+    ),
+  ),
 );
-
 
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Sis. Shayli McKen ',
-    // 'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Sister Flinders',
+    'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. Chris Lewis',
+    'name' => 'Bro. Evan Norby',
     // 'subline' => ''
   )
 );
 
 require('globals.php');
-$meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
-$css_timestamp = filemtime('style.css');
-
 
 function makeHymnLink($hymnNum, $title, $tune = '', $href=NULL) {
   $output = strtolower($title);
@@ -232,6 +268,11 @@ function printHymn($hymn) {
       <div class="ward-title">
         <span class="ward-name">Western Hills Ward</span><br/>The Church of Jesus Christ of Latter-day Saints</div>
       <h1><?php echo $meetingType; ?> Meeting</h1>
+      <?php 
+            // if ($isSpecial) {
+            //   echo "<div class='special-day'>".$specialMeeting[$isSpecial]."</div>";
+            // }
+      ?>
       <div class="meeting-date"><?php echo date('F j, Y', $meetingDate); ?></div>
       <div class="meeting-leaders">
         <?php
@@ -249,27 +290,29 @@ function printHymn($hymn) {
       <div class="centered-item">Administration of the Sacrament</div>
       <?php 
         if (!$Fast_And_Testimony) {
-          foreach ($firstSpeakers as $speaker) {      
-            printItem($speaker); 
+          foreach ($program as $item) {      
+            switch ($item['type']) {
+              case 'music': 
+                printHymn($item['content']);
+              break;
+              
+              case 'speaker':
+                printItem($item['content']);
+              break; 
+
+              default:
+                printItem($itemp['content']);
+              }
           }
-        }
-      ?>
-      <?php 
+        } 
         if ($Fast_And_Testimony) {
           echo '<div class="centered-item">Sharing of Testimonies</div>';
-        } else {
-          printHymn($intermissionMusic[0]); 
-        }
+        } 
+      
+        printHymn($hymns['closing']); 
+        printItem($prayers['Benediction']); 
+
       ?>
-      <?php
-        if (!$Fast_And_Testimony) { 
-          foreach ($secondSpeakers as $speaker) {      
-            printItem($speaker); 
-          }
-        }
-      ?>
-      <?php printHymn($hymns['closing']); ?>
-      <?php printItem($prayers['Benediction']); ?>
     </main>
     <footer>
       <a class="button-link" href="announcements.php">Go to Announcements</a>

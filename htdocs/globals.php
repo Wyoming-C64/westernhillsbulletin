@@ -1,6 +1,14 @@
 <?php
+$specialMeeting = array(
+  "Christmas" => "Christmas Sunday",
+  "Easter" => "Easter Sunday"
+);
 
-$meetingDate = strtotime('April 13, 2025 10:30:00 am');
-$Fast_And_Testimony = TRUE;
+$meetingDate = strtotime('April 20, 2025 10:30:00 am');
+$Fast_And_Testimony = FALSE;
+$isSpecial = "Easter";
+$meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
+
+$css_timestamp = date("Ymdhis");
 
 ?>
