@@ -15,16 +15,16 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bishop Jason Whiting',
-  //   'subline' => ''
-  // ),
   array(
     'assignment' => 'Presiding',
-    'name' => 'Bro. Michael Howard',
-    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Ken Burke',
@@ -35,16 +35,16 @@ $leaders = array(
   //   'name' => 'Bishop Jason Whiting',
   //   'subline' => ''
   // ),
-  array(
-    'assignment' => 'Conducting',
-    'name' => 'Bro. Michael Howard',
-    // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
-  ),
   // array(
   //   'assignment' => 'Conducting',
-  //   'name' => 'Bro. Ken Burke',
-  //   // 'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  //   'name' => 'Bro. Michael Howard',
+  //   // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   // ),
+  array(
+    'assignment' => 'Conducting',
+    'name' => 'Bro. Ken Burke',
+    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  ),
   // array(
   //   'assignment' => 'Chorister',
   //   'name' => 'Sis. Jean Parks',
@@ -57,14 +57,14 @@ $leaders = array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Pam Hall',
   // ),
-  // array(
-  //   'assignment' => 'Accompanist',
-  //   'name' => 'Bro. Jason Bird',
-  // ),
   array(
-    'assignment' => 'Accompanists',
-    'name' => 'Sis. Pam Hall<br/>Bro. Jason Bird'
-  )
+    'assignment' => 'Accompanist',
+    'name' => 'Bro. Jason Bird',
+  ),
+  // array(
+  //   'assignment' => 'Accompanists',
+  //   'name' => 'Sis. Pam Hall<br/>Bro. Jason Bird'
+  // )
   // array(
   //   'assignment' => 'Accompanist',
   //   'name' => 'Bro. Joey Bainbridge',
@@ -74,19 +74,19 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 6,
-    'name' => "Redeemer of Israel",
+    'reference' => 30,
+    'name' => "Come, Come, Ye Saints",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 178,
-    'name' => "O Lord of Hosts",
+    'reference' => 192,
+    'name' => "He Died! The Great Redeemer Died",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 200,
-    'name' => "Christ the Lord Is Risen Today",
+    'reference' => 111,
+    'name' => "Rock of Ages",
     // 'href' => ""
   ),
 );
@@ -189,12 +189,12 @@ $program = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Sister Flinders',
-    'subline' => 'Colorado Fort Collins Mission'
+    'name' => 'Sis. Adrienne Howard',
+    // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. Evan Norby',
+    'name' => 'Bro. Thomas Finch',
     // 'subline' => ''
   )
 );

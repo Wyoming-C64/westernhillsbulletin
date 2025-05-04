@@ -11,14 +11,21 @@ function mike_dump($v) {
 
 $announcements = array(
   
-  // array(
-  //   "title" => "Mission Preparation Class",
-  //   "date" => strtotime("Sunday, 6:00 pm"),
-  //   "time" => strtotime("Sunday, 6:00 pm"),
-  //   "location" => "1618 Grove Drive, Cheyenne, WY",
-  //   "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Randy Davis and various returned missionares.</p>
-  //   <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
-  // ),
+  array(
+    "title" => "Mission Preparation Class",
+    "date" => strtotime("Sunday, 6:00 pm"),
+    "time" => strtotime("Sunday, 6:00 pm"),
+    "location" => "1618 Grove Drive, Cheyenne, WY",
+    "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Randy Davis and various returned missionares.</p>
+    <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
+  ),
+  array(
+    "title" => "Stake Personal Finance Class",
+    "date" => strtotime("May 8, 2025"),
+    "time" => strtotime("May 8, 2025 18:30:00"),
+    "location" => "Cheyenne Stake Center<br/>309 Western Hills Blvd, Cheyenne, WY",
+    "description" => "<p>The new starting date and time for the personal finance class is Thursday, May 8, 2025 at <span class='small-caps'>6:30 pm</span>. The class will be held every Thursday for 10 weeks at the Cheyenne Stake Center, and is intended for all adults age 18 and above. Please reach out to Brother and Sister Wilde at (307) 631-2218 or <a href='mailto:wyldventures1@gmail.com' target='_blank'>wyldventures1@gmail.com</a> to sign up or if you have any questions.</a>"
+  ),
   array(
     "title" => "2025 Ward Temple Schedule",
     "date" => strtotime("May 17, 2025"),
@@ -38,28 +45,6 @@ $announcements = array(
       <div class='left-item'>Jul. 17, 7:00 pm</div>
       <div class='right-item'>Sealings</div>
     </div>"
-  ),
-  array("title" => "Stake Primary: Stake Conference Rehersal",
-    "date" => strtotime("April 27, 2025"),
-    "time" => strtotime("April 27, 2025 9:00:00"),
-    "location" => "Cheyenne Stake Center - 309 Western Hills Blvd.",
-    "description" => "<p>Stake Primary Children will be singing during the <span class='small-caps'>10:00 am</span> session of Stake Conference on Sunday, April 27. During Ward Conferences, each Primary learned <i>My Own Sacred Grove</i> with Pres. Sutphin, and he will lead the Primary children in singing for Stake Conference. All Primary children ages 3 through 11 are invited to participate.<p>
-
-    <p><b>Mark Your Calendars:</b> Before the Conference on Sunday morning, we will have a <span class='strong-small-caps'>9:00 am</span> performance Practice in the Chapel to prepare for the event. We hope to see you there!</p>
-
-    <p>In the meantime, here's a video link of the song to help you practice at home: <a href='https://www.youtube.com/watch?v=W8UnRqgDlr8' target='_blank' title='My Own Sacred Grove video.'>https://www.youtube.com/watch?v=W8UnRqgDlr8</a> (Opens in YouTube.)</p>
-
-    <p>Thanks!<br/>&nbsp;&nbsp;&nbsp;<i>~ Trisha, Christy, Carlie, and Kaylee</i>"
-  ),
-  array(
-    "title" => "Stake Temple Day",
-    "date" => strtotime("May 3, 2025"),
-    "time" => strtotime("May 3, 2025 14:00"),
-    "location" => "Colorado Fort Collins Temple",
-    "description" => "<p>Cheyenne Stake Temple Day is scheduled for May 3rd. The Temple Presidency has reserved ordinances for our Stake starting at <span class='small-caps'>2:00 pm</span>. Please note that the starting times on the sign-up sheet are the starting times for the ordinances and plan to arrive at least 15 minutes early to prepare. If you have a living ordinance that you would like to have completed during the Stake Temple Day, please contact <a href='mailto:Steven%20Garber%20&lt;sdgarbs@gmail.com&gt;' target='_blank'>Bro. Steven Garber</a> and he will help you to coordinate with the Temple office.</p>
-
-    <p>This is a wonderful opportunity for our Stake to gather together in the House of the Lord. If you would like to reserve an ordinance and time slot, please sign up using the link below: (opens a sign-up form at SignupGenius.com)</p>
-    <p><a href='https://www.signupgenius.com/go/70A054DACAF28A2FB6-55741559-cheyenne' target='_blank'>Stake Temple Day Sign Up</a>"
   ),
   array(
     "title" => "Denver Regional YSA Conference",
