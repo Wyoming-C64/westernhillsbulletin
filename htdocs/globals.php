@@ -4,8 +4,8 @@ $specialMeeting = array(
   "Easter" => "Easter Sunday"
 );
 
-$meetingDate = strtotime('May 4, 2025 10:30:00 am');
-$Fast_And_Testimony = TRUE;
+$meetingDate = strtotime('May 11, 2025 10:30:00 am');
+$Fast_And_Testimony = FALSE;
 $isSpecial = "Easter";
 $meetingType = ($Fast_And_Testimony ? "Fast & Testimony" : "Sacrament");
 

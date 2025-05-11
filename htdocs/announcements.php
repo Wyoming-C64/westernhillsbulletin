@@ -11,21 +11,21 @@ function mike_dump($v) {
 
 $announcements = array(
   
-  array(
-    "title" => "Mission Preparation Class",
-    "date" => strtotime("Sunday, 6:00 pm"),
-    "time" => strtotime("Sunday, 6:00 pm"),
-    "location" => "1618 Grove Drive, Cheyenne, WY",
-    "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Randy Davis and various returned missionares.</p>
-    <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
-  ),
-  array(
-    "title" => "Stake Personal Finance Class",
-    "date" => strtotime("May 8, 2025"),
-    "time" => strtotime("May 8, 2025 18:30:00"),
-    "location" => "Cheyenne Stake Center<br/>309 Western Hills Blvd, Cheyenne, WY",
-    "description" => "<p>The new starting date and time for the personal finance class is Thursday, May 8, 2025 at <span class='small-caps'>6:30 pm</span>. The class will be held every Thursday for 10 weeks at the Cheyenne Stake Center, and is intended for all adults age 18 and above. Please reach out to Brother and Sister Wilde at (307) 631-2218 or <a href='mailto:wyldventures1@gmail.com' target='_blank'>wyldventures1@gmail.com</a> to sign up or if you have any questions.</a>"
-  ),
+  // array(
+  //   "title" => "Mission Preparation Class",
+  //   "date" => strtotime("Sunday, 6:00 pm"),
+  //   "time" => strtotime("Sunday, 6:00 pm"),
+  //   "location" => "1618 Grove Drive, Cheyenne, WY",
+  //   "description" => "<p>The Mission Preparation Class is open to all youth interested in serving a mission. It will be held every Sunday at 6:00 <span class='small-caps'>pm</span> until the cirriculum is completed. The class will be taught by Bro. Randy Davis and various returned missionares.</p>
+  //   <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
+  // ),
+  // array(
+  //   "title" => "",
+  //   "date" => strtotime(""),
+  //   "time" => strtotime(""),
+  //   "location" => "",
+  //   "description" => ""
+  // ),
   array(
     "title" => "2025 Ward Temple Schedule",
     "date" => strtotime("May 17, 2025"),
@@ -66,16 +66,7 @@ $announcements = array(
   ),
   array(
     "title" => "Stake Youth Summer Activities",
-    "description" => "<p><b>Youth Conference 2025 (Youth Turning 14 and up)</b></p>
-
-    <p>June 23-25, 2025<br/>
-    Laramie County Community College Campus<br/>
-    $75 per youth</p>
-
-    <p>Registration Link and flyer to hand out is attached: (opens a Google Doc form)<br/>
-    <a href='https://docs.google.com/forms/d/e/1FAIpQLSdcq77yn0s2J8Vzwg-Vaf4KKBYmZXAi17kUHoceltq1zdl-Ww/viewform' target='_blank' title='2025 Youth Conference Registration Form'>2025 Youth Conference Registration Form</a></p> 
-
-    <p><b>Young Women's Camp (ALL Young Women)</b></p>
+    "description" => "<p><b>Young Women's Camp (ALL Young Women)</b></p>
 
     <p>July 15-17, 2025<br/>
     Camp Batel<br/>
@@ -171,7 +162,7 @@ function printAnnouncement($item) {
       <h1>Announcements & Events</h1>
       <div class="meeting-date"><?php echo date("F j, Y",$meetingDate); ?></div>
     </header>
-    <main>
+    <main class="program-main">
       <?php 
         foreach ($announcements as $announcement) {
           printAnnouncement($announcement);

@@ -109,11 +109,15 @@ a:visited {
 .program {
   margin: 1em auto;
   display: block;
-  padding: 2em 1em;
+  padding: 2em 0;
   max-width: 800px;
   border: 1px solid grey;
   background-color: white;
   box-shadow: 5px 5px 12px black;
+}
+
+.program-main {
+  padding: 0 1em;
 }
 
 .program-header {
