@@ -112,7 +112,7 @@ $program = array(
     'type' => 'music',
     'content' =>  array(
       'assignment' => 'Musical Number',
-      'name' => "<i>My Mother Dear</i> and <i>The Dearest Name</i>",
+      'name' => "<i>My Mother Dear</i> and<br/><i>The Dearest Name</i>",
       'subline' => "Primary Children",
     ),
   ),
