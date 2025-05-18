@@ -15,16 +15,16 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  // array(
-  //   'assignment' => 'Presiding',
-  //   'name' => 'Bishop Jason Whiting',
-  //   'subline' => ''
-  // ),
   array(
     'assignment' => 'Presiding',
-    'name' => 'Bro. Michael Howard',
-    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+    'name' => 'Bishop Jason Whiting',
+    'subline' => ''
   ),
+  // array(
+  //   'assignment' => 'Presiding',
+  //   'name' => 'Bro. Michael Howard',
+  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  // ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Ken Burke',
@@ -53,14 +53,14 @@ $leaders = array(
       'assignment' => 'Chorister',
       'name' => 'Sis. Adrienne Howard',
     ),
-  array(
-    'assignment' => 'Accompanist',
-    'name' => 'Sis. Pam Hall',
-  ),
   // array(
   //   'assignment' => 'Accompanist',
-  //   'name' => 'Bro. Jason Bird',
+  //   'name' => 'Sis. Pam Hall',
   // ),
+  array(
+    'assignment' => 'Accompanist',
+    'name' => 'Bro. Jason Bird',
+  ),
   // array(
   //   'assignment' => 'Accompanists',
   //   'name' => 'Sis. Pam Hall<br/>Bro. Jason Bird'
@@ -74,19 +74,19 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 298,
-    'name' => "Home Can Be a Heaven on Earth",
+    'reference' => 3,
+    'name' => "Now Let Us Rejoice",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 196,
-    'name' => "Jesus, Once of Humble Birth",
+    'reference' => 190,
+    'name' => "In Memory of the Crucified",
     // 'tune' => 'Hancock',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 293,
-    'name' => "Each Life That Touches Ours for Good",
+    'reference' => 270,
+    'name' => "I'll Go Where You Want Me to Go",
     // 'href' => ""
   ),
 );
@@ -96,31 +96,23 @@ $program = array(
     'type' => 'speaker',
     'content' =>  array(
       'assignment' => 'Speaker',
-      'name' => 'Sis. Carly Brown',
+      'name' => 'Sis. Ashley Martinez',
       // 'subline' => ''
-    ),
-  ),
-  array(
-    'type' => 'speaker',
-    'content' =>  array(
-      'assignment' => 'Speaker',
-      'name' => 'Sister Flinders',
-      'subline' => 'Colorado Fort Collins Mission'
     ),
   ),
   array(
     'type' => 'music',
     'content' =>  array(
       'assignment' => 'Musical Number',
-      'name' => "<i>My Mother Dear</i> and<br/><i>The Dearest Name</i>",
-      'subline' => "Primary Children",
+      'name' => '<i>Consider the Lilies of the Field</i>',
+      'subline' => 'Sister Flinders - <br/>Colorado Fort Collins Mission'
     ),
   ),
   array(
     'type' => 'speaker',
     'content' =>  array(
       'assignment' => 'Speaker',
-      'name' => 'Bro. Chad McKen',
+      'name' => 'Bro. Michael Stacy',
       // 'subline' => ''
     ),
   ),
@@ -143,7 +135,7 @@ $prayers = array(
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Bro. Johnny Walker',
+    'name' => 'Sis. Chelsea Williams',
     // 'subline' => ''
   )
 );
