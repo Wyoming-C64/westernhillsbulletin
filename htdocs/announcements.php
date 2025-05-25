@@ -9,7 +9,72 @@ function mike_dump($v) {
   echo "</pre>";
 }
 
-$announcements = array(
+function makeIndexLink($title) {
+  $output = strtolower($title);
+  $output = preg_replace('/[\'\?]+/u', '', $output);
+  $output = preg_replace('/[\s\pP]+/u', '-', $output);
+  return $output;
+}
+
+$WardAnnouncements = array(
+  // array(
+  //   "title" => "",
+  //   "date" => strtotime(""),
+  //   "time" => strtotime(""),
+  //   "location" => "",
+  //   "description" => ""
+  // ),
+  array(
+    "title" => "Ward Relief Society Activity",
+    "subtitle" => "Set Your Soul On Fire",
+    "date" => strtotime("May 27, 2025"),
+    "time" => strtotime("May 27, 2025 19:00"),
+    "location" => "508 Princeton Lane, Cheyenne, WY",
+    "description" => "
+    <p>Please mark your calendar: Our next Relief Society get together will be at Amber Norby's home on Tuesday, May 27, 2025 at 7:00 <span class='small-caps'>pm</span>. Come gather with the sisters of the ward while we sit around a fire roasting s'mores. If you have a camp chair, you are welcome to bring it with you.</p>
+    <p><img src='RS-Activity-full.jpg'></p>
+    "
+  ),
+
+  array(
+    "title" => "Young Men / Young Women Calendar",
+    // "date" => strtotime("January 26, 2025"),
+    // "time" => strtotime("January 26, 2025 10:30:00"),
+    "description" => "<p>Bro. and Sis. Rees have put together a calendar (shared Google spreadsheet) for all upcoming youth events and meetings.</p>
+    <p>You can access this shared document at: <br/><a href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>Western Hills Youth Activities Calendar</a></p>"
+  ),
+  array(
+    "title" => "2025 Ward Temple Schedule",
+    "date" => strtotime("June 13, 2025"),
+    "time" => strtotime("June 13, 2025 19:00:00"),
+    "location" => "Colorado Fort Collins Temple",
+    "description" => "<p>Here are the upcoming ward temple events. Please make your own reservations on LDS Tools.</p>
+    <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
+    <div class='additional'>
+      <div class='left-item'>Jun. 13, 7:00 pm</div>
+      <div class='right-item'>Endowments</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Jul. 17, 7:00 pm</div>
+      <div class='right-item'>Sealings</div>
+    </div>
+    <div class='additional'>
+      <div class='left-item'>Aug. 21, 7:00 pm</div>
+      <div class='right-item'>Endowments</div>
+    </div>"
+  ),
+  array(
+    "title" => "Mobile (Digital) Temple Recommend",
+    // "date" => strtotime(""),
+    // "time" => strtotime(""),
+    // "location" => "",
+    "description" => "<p>Now you can go paperless with your temple recommend. Members who wish to make the change to a &quot;Mobile Temple Recommend&quot; must contact and make the request to a member of the bishopric. A complete guide containing requirements and instructions can be found in <a href='https://assets.churchofjesuschrist.org/88/ax/88axo0x9x8int0miyob9861m3olfjgy8yqzdghji/tem_rush_member_instructions_setting_up_mobile_temple_recommend_member.pdf' title='Member Guide: Switching to Mobile Temple Recommend' target='_blank'>this document</a>. (Opens a PDF file from the official Church website.)</p>"
+  ),
+  
+
+);
+
+$StakeAnnouncements = array(
   // array(
   //   "title" => "",
   //   "date" => strtotime(""),
@@ -26,25 +91,8 @@ $announcements = array(
     <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
   ),
   array(
-    "title" => "Set Your Soul On Fire",
-    "date" => strtotime("May 27, 2025"),
-    "time" => strtotime("May 27, 2025 19:00"),
-    "location" => "508 Princeton Lane, Cheyenne, WY",
-    "description" => "
-    
-    <p>Please mark your calendar. Our next Relief Society get together will be at Amber Norby's home on Tuesday, May 27, 2025 at 7:00 <span class='small-caps'>pm</span>. Come gather with the sisters of the ward while we sit around a fire roasting s'mores. If you have a camp chair, you are welcome to bring it with you.</p>
-    <p><img src='RS-Activity-full.jpg'></p>
-    "
-  ),
-  array(
-    "title" => "Young Men / Young Women Calendar",
-    // "date" => strtotime("January 26, 2025"),
-    // "time" => strtotime("January 26, 2025 10:30:00"),
-    "description" => "<p>Bro. and Sis. Rees have put together a calendar (shared Google spreadsheet) for all upcoming youth events and meetings.</p>
-    <p>You can access this shared document at: <br/><a href='https://docs.google.com/spreadsheets/d/1zUSsAU1cWavP31NuGN3o1eqZKI8jg8tC1KXJro7zNZo/' target='_blank'>Western Hills Youth Activities Calendar</a></p>"
-  ),
-  array(
-    "title" => "Love Flowers? Temple grounds opportunity for all ages!",
+    "title" => "Temple Grounds Service Opportunity",
+    "subtitle" => "Love Flowers? This opportunity is for all ages!",
     "date" => strtotime("May 20, 2025"),
     // "time" => strtotime(""),
     "location" => "Fort Collins Colordo Temple",
@@ -84,6 +132,7 @@ $announcements = array(
   ),
   array(
     "title" => "Cheyenne Stake Primary Day Camp",
+    "subtitle" => "Ministering Missionaries",
     "date" => strtotime("June 7, 2025"),
     "time" => strtotime("June 7, 2025 9:00:00"),
     "location" => "Four Mile Meetinghouse<br/>7721 Badger Rd., Cheyenne, WY",
@@ -91,41 +140,22 @@ $announcements = array(
     <p>Please RSVP using <a href='https://docs.google.com/forms/d/e/1FAIpQLScOS6AIKRhIykUfFpD0DK1r52xd-wGwqNnuJhhOBs44vInx7g/viewform?usp=header' target='_blank'>this Google form</a>.</p>"
   ),
   array(
-    "title" => "2025 Ward Temple Schedule",
-    "date" => strtotime("June 13, 2025"),
-    "time" => strtotime("June 13, 2025 19:00:00"),
-    "location" => "Colorado Fort Collins Temple",
-    "description" => "<p>Here are the upcoming ward temple events. Please make your own reservations on LDS Tools.</p>
-    <p>If you can't join us on these particular dates or times, please try to schedule a temple visit sometime during the same week. If you wish to do different ordinance work for your family's needs, please schedule as you wish. In any case, <i>please join us at the temple!</i></p>
-    <div class='additional'>
-      <div class='left-item'>Jun. 13, 7:00 pm</div>
-      <div class='right-item'>Endowments</div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Jul. 17, 7:00 pm</div>
-      <div class='right-item'>Sealings</div>
-    </div>
-    <div class='additional'>
-      <div class='left-item'>Aug. 21, 7:00 pm</div>
-      <div class='right-item'>Endowments</div>
-    </div>"
-  ),
-  array(
-    "title" => "Stake Youth Summer Activities",
+    "title" => "Stake Young Women's Camp",
+    "startdate" => strtotime("July 15, 2025"),
+    "enddate" => strtotime("July 17, 2025"),
+    "location" => "Camp Batel",
     "description" => "<p><b>Young Women's Camp (ALL Young Women)</b></p>
 
-    <p>July 15-17, 2025<br/>
-    Camp Batel<br/>
-    $75 per camper</p>
+    <p>The Stake Young Women's Camp at Camp Batel will be July 15-17, 2025. Cost is $75.00 per camper attending. Please use the link below to register your campers.</p>
 
     <p>Registration Website: (opens a Weebly form)<br/>
     <a href='https://csgirlscamp.weebly.com/' target='_blank' title='Young Women's Camp Registration'>https://csgirlscamp.weebly.com/</a></p>
-    <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a> or <a href='mailto:samshumway@gmail.com' target='_blank'>Bro. Sam Shumway</a>.</p>"
-  ),
-  
-  
-  
 
+    <p>If you have questions, please direct them to <a href='mailto:tiarelittle@yahoo.com' target='_blank'>Sis. Tia Little</a>.</p>"
+  ),
+);
+
+$finalAnnouncements = array(
 /******** THESE ANNOUNCEMENTS ALWAYS LAST *********/
   // array(
   //   "title" => "Bishopric Appointments",
@@ -149,14 +179,15 @@ $announcements = array(
       <div class='right-item'><a href='tel:+13072862641'>(307) 286-2641</a></div>
     </div>"
   )
-
 );
+
 
 require('globals.php');
 
 function printAnnouncement($item) {
   $output = '<div class="announcement">';
-  $output .= '<h2 class="announcement-title">'.$item["title"].'</h2>';
+  $anchorTitle = makeIndexLink($item["title"]);
+  $output .= '<h3 class="announcement-title" id="'.$anchorTitle.'">'.$item["title"].'</h3>';
   if (isset($item['date'])) {
     $output .= '<div class="date-time">'.date("F j, Y",$item['date']);
   
@@ -179,7 +210,18 @@ function printAnnouncement($item) {
   if (isset($item["description"])) {
     $output .= '<div class="description">'.$item["description"].'</div>';
   }
+  $output .= '<p><a href="#top" class="back-to-top">Back to Contents</a></p>';
   $output .= '</div>'; // End Line Item
+  
+  echo $output;
+}
+
+
+function printAnnouncementLink($item) {
+  $output = '<li>';
+  $anchorTitle = makeIndexLink($item["title"]);
+  $output .= '<b><a href="#'.$anchorTitle.'">'.$item["title"].'</a></b></h2>';
+  $output .= '</li>'; // End Line Item
   
   echo $output;
 }
@@ -203,8 +245,46 @@ function printAnnouncement($item) {
       <div class="meeting-date"><?php echo date("F j, Y",$meetingDate); ?></div>
     </header>
     <main class="program-main">
+      <h2 id="top">Contents:</h2>
+      <h3>Ward Announcements</h3>
+        <ul>
+          <?php 
+            foreach ($WardAnnouncements as $announcement) {
+              printAnnouncementLink($announcement);
+            }
+          ?>
+        </ul>
+      <h3>Stake and Regional Announcements</h3>
+        <ul>
+          <?php
+            foreach ($StakeAnnouncements as $announcement) {
+              printAnnouncementLink($announcement);
+            }
+          ?>
+        </ul>
+      <h3>Other Announcements</h3>
+        <ul>    
+          <?php
+            foreach ($finalAnnouncements as $announcement) {
+              printAnnouncementLink($announcement);
+            }
+          ?>
+        </ul>
+      <h2>Ward Announcements</h2>
       <?php 
-        foreach ($announcements as $announcement) {
+        foreach ($WardAnnouncements as $announcement) {
+          printAnnouncement($announcement);
+        }
+      ?>
+      <h2>Stake Announcements</h2>
+      <?php 
+        foreach ($StakeAnnouncements as $announcement) {
+          printAnnouncement($announcement);
+        }
+      ?>
+      <h2>Other Announcements</h2>
+      <?php 
+        foreach ($finalAnnouncements as $announcement) {
           printAnnouncement($announcement);
         }
       ?>

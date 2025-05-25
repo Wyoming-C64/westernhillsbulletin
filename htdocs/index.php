@@ -15,16 +15,16 @@ $leaders = array(
   //   'name' => 'Pres. Ronald Lopez',
   //   'subline' => 'Cheyenne Wyoming Stake'
   // ),
-  array(
-    'assignment' => 'Presiding',
-    'name' => 'Bishop Jason Whiting',
-    'subline' => ''
-  ),
   // array(
   //   'assignment' => 'Presiding',
-  //   'name' => 'Bro. Michael Howard',
-  //   'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  //   'name' => 'Bishop Jason Whiting',
+  //   'subline' => ''
   // ),
+  array(
+    'assignment' => 'Presiding',
+    'name' => 'Bro. Michael Howard',
+    'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
+  ),
   // array(
   //   'assignment' => 'Presiding',
   //   'name' => 'Bro. Ken Burke',
@@ -35,16 +35,16 @@ $leaders = array(
   //   'name' => 'Bishop Jason Whiting',
   //   'subline' => ''
   // ),
-  // array(
-  //   'assignment' => 'Conducting',
-  //   'name' => 'Bro. Michael Howard',
-  //   // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
-  // ),
   array(
     'assignment' => 'Conducting',
-    'name' => 'Bro. Ken Burke',
-    'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+    'name' => 'Bro. Michael Howard',
+    // 'subline' => 'Bishopric 1<span class="super-ordinal">st</span> Counselor'
   ),
+  // array(
+  //   'assignment' => 'Conducting',
+  //   'name' => 'Bro. Ken Burke',
+  //   'subline' => 'Bishopric 2<span class="super-ordinal">nd</span> Counselor'
+  // ),
   // array(
   //   'assignment' => 'Chorister',
   //   'name' => 'Sis. Jean Parks',
@@ -53,14 +53,14 @@ $leaders = array(
       'assignment' => 'Chorister',
       'name' => 'Sis. Adrienne Howard',
     ),
-  // array(
-  //   'assignment' => 'Accompanist',
-  //   'name' => 'Sis. Pam Hall',
-  // ),
   array(
     'assignment' => 'Accompanist',
-    'name' => 'Bro. Jason Bird',
+    'name' => 'Sis. Pam Hall',
   ),
+  // array(
+  //   'assignment' => 'Accompanist',
+  //   'name' => 'Bro. Jason Bird',
+  // ),
   // array(
   //   'assignment' => 'Accompanists',
   //   'name' => 'Sis. Pam Hall<br/>Bro. Jason Bird'
@@ -74,19 +74,19 @@ $leaders = array(
 $hymns = array(
   'opening' => array(
     'assignment' => 'Hymn',
-    'reference' => 3,
-    'name' => "Now Let Us Rejoice",
+    'reference' => 131,
+    'name' => "More Holiness Give Me",
   ),
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
-    'reference' => 190,
-    'name' => "In Memory of the Crucified",
-    // 'tune' => 'Hancock',
+    'reference' => 176,
+    'name' => "'Tis Sweet to Sing the Matchless Love'",
+    'tune' => 'Meredith',
   ),
   'closing' => array(
     'assignment' => 'Hymn',
-    'reference' => 270,
-    'name' => "I'll Go Where You Want Me to Go",
+    'reference' => 157,
+    'name' => "Thy Spirit, Lord, Has Stirred Our Souls",
     // 'href' => ""
   ),
 );
@@ -96,24 +96,24 @@ $program = array(
     'type' => 'speaker',
     'content' =>  array(
       'assignment' => 'Speaker',
-      'name' => 'Sis. Ashley Martinez',
+      'name' => 'Sis. Hailee McFarland',
       // 'subline' => ''
     ),
   ),
   array(
     'type' => 'music',
     'content' =>  array(
-      'assignment' => 'Musical Number',
-      'name' => '<i>Consider the Lilies of the Field</i>',
-      'subline' => 'Sister Flinders - <br/>Colorado Fort Collins Mission'
+      'assignment' => 'Hymn',
+      'reference' => 143,
+      'name' => 'Let the Holy Spirit Guide',
     ),
   ),
   array(
     'type' => 'speaker',
     'content' =>  array(
       'assignment' => 'Speaker',
-      'name' => 'Bro. Michael Stacy',
-      // 'subline' => ''
+      'name' => 'Bro. Bryce McFarland',
+      'subline' => 'Cheyenne Stake High Council'
     ),
   ),
   // array(
@@ -130,12 +130,12 @@ $program = array(
 $prayers = array(
   'Invocation' => array(
     'assignment' => 'Invocation',
-    'name' => 'Bro. Jim Olsen',
+    'name' => 'Bro. Joey Bainbridge',
     // 'subline' => 'Colorado Fort Collins Mission'
   ),
   'Benediction' => array(
     'assignment' => 'Benediction',
-    'name' => 'Sis. Chelsea Williams',
+    'name' => 'Bro. Bill Little',
     // 'subline' => ''
   )
 );

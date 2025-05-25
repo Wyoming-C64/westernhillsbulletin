@@ -25,9 +25,13 @@ h1 {
 }
 
 h2 {
-  margin: 2em 0;
-  font-size: 1.1em;
+  margin: 2em -1em 1em -1em;
+  font-size: 1.2em;
   font-variant: small-caps;
+  background-image: linear-gradient(to right, #006000, white 90%);
+  padding: 0.25em 1em;
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }
 
 .special-day {
@@ -39,11 +43,11 @@ h2 {
 }
 
 .announcement-title {
-  margin: 1em 0;
+  margin: 0 0 1em 0;
 }
 
 h3 {
-  font-size: 0.9em;
+  font-size: 1.0em;
   font-variant: small-caps;  
 }
 
@@ -53,11 +57,20 @@ img {
   border: 0px;
 }
 
-a {
+a, li a {
   font-size: 1.1em;
   color: green;
   text-decoration: none;
   border-bottom: 1px dotted lightgreen;
+}
+
+li a, .back-to-top {
+  font-variant: small-caps;
+  font-weight: normal;
+}
+
+.back-to-top {
+  font-size: 0.8em;
 }
 
 .long_url {
@@ -70,16 +83,16 @@ a:visited {
 }
 
 .announcement {
-  margin: 1em 0;
+  margin: 0 0 1em 0;
   padding: 0.5em 0;
-  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .ward-title {
   font-family: 'Cormorant SC', serif;
   font-style: regular;
   font-size: 0.9em;
-  /* font-variant: small-caps; */
+  font-variant: small-caps;
   font-weight: 600;
   text-align: center;
   margin-bottom: 2em;
@@ -88,6 +101,9 @@ a:visited {
   padding: 1em 0;
   border-top: 5px double white;
   border-bottom: 5px double white;
+  box-shadow: inset 0px 0px 38px black;
+  text-shadow: 1px 1px 5px black;
+  margin-right: -2em;
 }
 
 .ward-name {
@@ -111,9 +127,10 @@ a:visited {
   display: block;
   padding: 2em 0;
   max-width: 800px;
-  border: 1px solid grey;
+  border: 1px solid black;
   background-color: white;
   box-shadow: 5px 5px 12px black;
+  overflow: hidden;
 }
 
 .program-main {
