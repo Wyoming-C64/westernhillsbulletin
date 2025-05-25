@@ -68,7 +68,7 @@ $WardAnnouncements = array(
     // "date" => strtotime(""),
     // "time" => strtotime(""),
     // "location" => "",
-    "description" => "<p>Now you can go paperless with your temple recommend. Members who wish to make the change to a &quot;Mobile Temple Recommend&quot; must contact and make the request to a member of the bishopric. A complete guide containing requirements and instructions can be found in <a href='https://assets.churchofjesuschrist.org/88/ax/88axo0x9x8int0miyob9861m3olfjgy8yqzdghji/tem_rush_member_instructions_setting_up_mobile_temple_recommend_member.pdf' title='Member Guide: Switching to Mobile Temple Recommend' target='_blank'>this document</a>. (Opens a PDF file from the official Church website.)</p>"
+    "description" => "<p>Now you can go paperless with your temple recommend. Members who wish to make the change to a &quot;Mobile Temple Recommend&quot; must contact and make the request to a member of the bishopric. A complete guide containing requirements and instructions can be found in this document: <i><a href='https://assets.churchofjesuschrist.org/88/ax/88axo0x9x8int0miyob9861m3olfjgy8yqzdghji/tem_rush_member_instructions_setting_up_mobile_temple_recommend_member.pdf' title='Member Guide: Switching to Mobile Temple Recommend' target='_blank'>Member Guide: Switching to Mobile Temple Recommend</a></i>. (Opens a PDF file from the official Church website.)</p>"
   ),
   
 
