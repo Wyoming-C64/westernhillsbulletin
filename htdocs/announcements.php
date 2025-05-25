@@ -271,23 +271,29 @@ function printAnnouncementLink($item) {
           ?>
         </ul>
       <h2>Ward Announcements</h2>
+      <div class="announcement-list">
       <?php 
         foreach ($WardAnnouncements as $announcement) {
           printAnnouncement($announcement);
         }
       ?>
+      </div>
       <h2>Stake Announcements</h2>
+      <div class="announcement-list">
       <?php 
         foreach ($StakeAnnouncements as $announcement) {
           printAnnouncement($announcement);
         }
       ?>
+      </div>
       <h2>Other Announcements</h2>
+      <div class="announcement-list">
       <?php 
-        foreach ($finalAnnouncements as $announcement) {
+        foreach ($finalAnnouncements as $key => $announcement) {
           printAnnouncement($announcement);
         }
       ?>
+      </div>
     </main>
     <footer>
       <a class="button-link" href="index.php">Go to Program</a>

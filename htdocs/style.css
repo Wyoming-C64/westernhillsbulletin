@@ -88,6 +88,12 @@ a:visited {
   border-bottom: 1px solid black;
 }
 
+.announcement:last-child {
+  border-bottom: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+
 .ward-title {
   font-family: 'Cormorant SC', serif;
   font-style: regular;
