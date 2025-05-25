@@ -80,7 +80,7 @@ $hymns = array(
   'sacrament' => array(
     'assignment' => 'Sacrament Hymn',
     'reference' => 176,
-    'name' => "'Tis Sweet to Sing the Matchless Love'",
+    'name' => "'Tis Sweet to Sing the Matchless Love",
     'tune' => 'Meredith',
   ),
   'closing' => array(
