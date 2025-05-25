@@ -94,23 +94,13 @@ $StakeAnnouncements = array(
     "title" => "Temple Grounds Service Opportunity",
     "subtitle" => "Love Flowers? This opportunity is for all ages!",
     "date" => strtotime("May 20, 2025"),
+    "enddate" => strtotime("May 30, 2025"),
     // "time" => strtotime(""),
     "location" => "Fort Collins Colordo Temple",
     "description" => "
     <p>The temple groundskeeper could use lots of drop-in or scheduled help planting flowers from 9:00 <span class='small-caps'>am</span> to 3:00 <span class='small-caps'>pm</span>, Monday through Friday, May 20-31. Scheduled groups will also be welcome on Saturdays.</p>
     
     <p>Individuals, families, and groups are welcome. Small children are welcome if they can be closely supervised. When you arrive, please report to the groundskeeper, Brother Jesse Baker, on the grounds or in the grounds building by the distribution center. Brother Baker's phone number is (970) 889-0126.</p>"
-  ),
-  array(
-    "title" => "Stake Temple Cleaning Assignment",
-    "date" => strtotime("May 23, 2025"),
-    "time" => strtotime("May 23, 2025 20:30:00"),
-    "location" => "Fort Collins Colorado Temple",
-    "description" => "<p>Endowed volunteers are needed to help with a Stake Temple Cleaning Assignment this coming Friday evening, May 23, 2025. Volunteers should come in Sunday dress to the Recommend Desk at 8:30 <span class='small-caps'>pm</span> with their current Temple Recommend. After brief instructions, you will change into the temple work clothes which are provided.</p> 
-    <p>Please contact Bro. Steve Garber by phone, text, or email listed below if you are available to volunteer so that he can communicate to the temple that our stake is able to fulfill the assignment.</p>
-    <p><b>Steve Garber</b><br/>
-    <a href='tel:13076402885'>Phone</a> or <a href='sms:13076402885'>text</a>: (307) 640-2885<br/>
-    Email: <a href='mailto:Steve Garber &lt;sdgarbs@gmail.com&gt;' target='_blank'>sdgarbs@gmail.com</a></p>"
   ),
   array(
     "title" => "Denver Regional YSA Conference",
